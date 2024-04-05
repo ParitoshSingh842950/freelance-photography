@@ -11,10 +11,10 @@ const Author = () => {
   return (
     <div>
       <Header />
-      <section className="m-4 mb-[10px]  p-4 relative h-[calc(100vh-90px)] flex flex-col justify-between">
+      <section className="m-4 mt-[80px] mb-[10px] p-4 relative h-[calc(100vh-90px)] flex flex-col justify-between">
         <CameraOutlet />
         {/* Name */}
-        <div className="flex justify-center items-center text-[11vw] font-bold font-[arial] [text-shadow:_0px_15px_20px_rgb(0_0_0_/_40%)] tracking-tighter">
+        <div className="flex  justify-center items-center text-[11vw] font-bold font-[arial] [text-shadow:_0px_15px_20px_rgb(0_0_0_/_40%)] tracking-tighter">
           SHOT BY ADA
         </div>
 

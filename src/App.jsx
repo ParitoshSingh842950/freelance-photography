@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Collection from "./pages/Collection";
 import Author from "./pages/Author";
+import Bio from "./pages/Bio";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/author",
     element: <Author />,
+  },
+  {
+    path: "/bio",
+    element: <Bio />,
   },
 ]);
 

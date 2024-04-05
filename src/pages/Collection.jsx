@@ -8,12 +8,12 @@ const Collection = () => {
     <div>
       <Header />
 
-        <h2 className="text-[120px] font-semibold font-[arial] tracking-tighter px-2">
-          Collections
-        </h2>
-        {collectionArray.map((e) => (
-          <CollectionCard data={e} key={e.id} />
-        ))}
+      <h2 className="text-[120px] font-black mt-[50px] font-[arial] -tracking-[10px] px-2">
+        Collections
+      </h2>
+      {collectionArray.map((e) => (
+        <CollectionCard data={e} key={e.id} />
+      ))}
     </div>
   );
 };
