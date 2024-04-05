@@ -4,21 +4,32 @@ import Header from "../components/Header";
 import CameraOutlet from "../components/CameraOutlet";
 import Modal from "../components/Modal";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Author = () => {
   const author = useSelector((state) => state.home.author);
+  const navigate = useNavigate();
 
   if (!author || !author.name) {
-    window.location.href = "/collection";
+    window.location.href = "/";
   }
 
   return (
     <div>
-      <Header />
-      <section className="m-4 mt-[80px] mb-[10px] p-4 relative h-[calc(100vh-90px)] flex flex-col justify-between">
+      {/* <Header /> */}
+      <div className="h-[60px] bg-black">
+        <button
+          className="h-[40px] group bg-white px-[30px] mt-[10px] ml-4 rounded font-semibold hover:bg-[whitesmoke] duration-150"
+          onClick={() => navigate("/")}
+        >
+          <i className="fa-solid group-hover:animate-ping fa-arrow-left-long mr-2"></i>
+          Back
+        </button>
+      </div>
+      <section className="m-4 mb-[10px] p-4 relative h-[calc(100vh-90px)] flex flex-col justify-between">
         <CameraOutlet />
         {/* Name */}
-        <div className="flex  justify-center items-center text-[11vw] font-bold font-[arial] [text-shadow:_0px_15px_20px_rgb(0_0_0_/_40%)] tracking-tighter">
+        <div className="flex  justify-center items-center text-[11vw] font-bold font-[Anton] [text-shadow:_0px_15px_20px_rgb(0_0_0_/_40%)] ">
           SHOT BY ADA
         </div>
 

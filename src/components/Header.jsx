@@ -8,14 +8,16 @@ const Header = ({ transparent, textWhite }) => {
     <div
       className={`h-[60px] fixed ${!transparent && "bg-black text-white"} ${
         textWhite && " text-white"
-      }  px-[30px] text-2xl font-semibold top-0 left-0 right-0 z-[2]`}
+      }  px-[30px] text-2xl font-semibold top-0 left-0 right-0 z-[5]`}
     >
       <div className="hidden md:flex h-full items-center justify-between">
-        <button onClick={() => navigate("/")}>Home</button>
-        <button onClick={() => navigate("/collection")}>Collections</button>
+        <p className="cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+          Home
+        </p>
+        <a href="#collection">Collections</a>
         <div className="flex gap-5">
-          <button onClick={() => navigate("/bio")}>Bio</button>
-          <button>Contact</button>
+          <a href="#bio">Bio</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
 
@@ -28,10 +30,12 @@ const Header = ({ transparent, textWhite }) => {
             <p className="ml-auto" onClick={() => setMenu(false)}>
               <i className="fa-solid fa-x"></i>
             </p>
-            <p onClick={() => navigate("/")}>Home</p>
-            <p onClick={() => navigate("/collection")}>Collections</p>
-            <p onClick={() => navigate("/bio")}>Bio</p>
-            <p>Contact</p>
+            <p className="cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+              Home
+            </p>
+            <a href="#collection">Collections</a>
+            <a href="#bio">Bio</a>
+            <a href="#contact">Contact</a>
           </div>
         )}
       </div>

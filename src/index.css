@@ -10,3 +10,6 @@
   background: #222;
   border-radius: 50px;
 }
+html {
+  scroll-behavior: smooth;
+}

@@ -1,10 +1,8 @@
 import React from "react";
-import Header from "../components/Header";
 
 const Bio = () => {
   return (
-    <div>
-      <Header transparent textWhite />
+    <div id="bio" className="mt-16">
       <div className="relative">
         <p className="text-[50px] md:text-[100px] font-bold text-white absolute left-5 bottom-0 z-[3]">
           .About
@@ -14,13 +12,13 @@ const Bio = () => {
         </p>
         <img
           src="images/yasmeen.png"
-          className="h-[50vh] md:h-[60vh] w-full object-cover grayscale duration-200 hover:grayscale-0 cursor-pointer"
+          className="h-[50vh] md:h-[70vh] w-full object-cover grayscale duration-200 hover:grayscale-0 cursor-pointer"
           alt=""
         />
       </div>
       <div className="px-[20px] md:px-[200px] h-[40vh]">
-        <h2 className="font-bold text-2xl text-center my-4">
-          My Name is Adanna
+        <h2 className="font-semibold text-xl text-center my-4">
+          My Name is <span className="font-black text-3xl">Adanna </span>
         </h2>
         <p>
           Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque

@@ -16,7 +16,7 @@ const ImageGallerySlider = () => {
             key={path}
             src={`images/${path}`}
             onClick={() => handleClickImage(path)}
-            className="h-[125px] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
+            className="h-[125px] relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
           />
         ))}
       </div>

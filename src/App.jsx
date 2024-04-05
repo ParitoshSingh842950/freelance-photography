@@ -8,19 +8,17 @@ import Bio from "./pages/Bio";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <>
+        <Home />
+        <Collection />
+        <Bio />
+      </>
+    ),
   },
   {
     path: "/collection",
-    element: <Collection />,
-  },
-  {
-    path: "/author",
     element: <Author />,
-  },
-  {
-    path: "/bio",
-    element: <Bio />,
   },
 ]);
 

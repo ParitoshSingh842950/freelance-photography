@@ -9,7 +9,7 @@ const CollectionCard = ({ data: { img, id, content, name, locked }, data }) => {
 
   const handleClick = () => {
     dispatch(setAuthor(data));
-    navigate("/author");
+    navigate("/collection");
   };
 
   return (
