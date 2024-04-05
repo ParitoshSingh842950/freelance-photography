@@ -13,10 +13,10 @@ const Modal = () => {
       onClick={() => dispatch(setModal({ open: false, data: null }))}
     >
       <div
-        className="w-[60vw] p-4 flex bg-black h-[90vh]"
+        className="w-[98vw] h-[70vh] md:w-[60vw] p-4 flex bg-black md:h-[90vh]"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-1/2 p-4 pl-14 h-full overflow-y-auto flex flex-col items-center">
+        <div className="w-1/2 p-4 md:pl-14 h-full overflow-y-auto flex flex-col items-center">
           <img
             className="w-full aspect-square object-cover grayscale"
             src={`images/${data}`}
@@ -32,7 +32,7 @@ const Modal = () => {
 
           <div className="text-white ">
             <h3 className="text-yellow-600 text-center">Description</h3>
-            <p className="indent-[30px]">
+            <p className="indent-[30px] md:text-md text-sm ">
               Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
               nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
@@ -44,7 +44,7 @@ const Modal = () => {
             </p>
           </div>
         </div>
-        <div className="p-4 h-full w-1/2">
+        <div className="md:p-4 h-full w-1/2">
           <img
             className="h-full w-full object-cover"
             src={`images/${data}`}
@@ -52,7 +52,6 @@ const Modal = () => {
           />
         </div>
       </div>
-      Modal
     </div>
   );
 };

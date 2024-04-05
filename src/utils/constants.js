@@ -23,6 +23,14 @@ export const collectionArray = [
     name: "What Wld I Miss?",
     locked: true,
   },
+  {
+    id: "04",
+    content:
+      "Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,",
+    img: "https://s3-alpha-sig.figma.com/img/b857/0ce4/31caaf3958d42b9adff082114b1a18d4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=niVo0q0vNZNeRUy1bSEV3hCrB0JAn5VMQd7W9zyRI8fWXwLQ3-I9zh9a-ghy7GkQcKTFa~3FdUHztlv4rk69fWPpqnlrI9PW5ys40zlo6-WaP6f9OMP8tUcmJO-PpTSFrOMSrwQ1DCbOhunMaBBdfgx7mwQr5ukEsi1DZGHSBusHG59TgjX1hq6OOyiVO2t5qrljTlZjCbx~ZjW7N2PQE0Lw4jDKUP5-BMq6xAiDoj1hLgmulZx4Dm0AeuZ50k~79wm53Bk9VaUkxLSLyinElBPDPSMMEyo8wC557LekzVqFNqtU73s2pOobHqEuP7nsxg6lzLnXGUWCJwOi~2lTAA__ ",
+    name: "MISC.  ‘18 - ‘24",
+    locked: false,
+  },
 ];
 
 export const GalleryImages = [

@@ -6,7 +6,11 @@ import Modal from "../components/Modal";
 import { useSelector } from "react-redux";
 
 const Author = () => {
-  const { name } = useSelector((state) => state.home.author);
+  const author = useSelector((state) => state.home.author);
+
+  if (!author || !author.name) {
+    window.location.href = "/collection";
+  }
 
   return (
     <div>
@@ -20,7 +24,7 @@ const Author = () => {
 
         {/* Intro */}
         <div className="w-full flex items-center justify-center p-4 flex-col mt-2">
-          <h2 className="text-2xl font-semibold">{name}</h2>
+          <h2 className="text-2xl font-semibold">{author?.name}</h2>
           <p>
             Nulla varius volutpat turpis sed lacinia. Proin vitae facilisis
             nisi, ac posuere leo.

@@ -6,19 +6,19 @@ const Bio = () => {
     <div>
       <Header transparent textWhite />
       <div className="relative">
-        <p className="text-[100px] font-bold text-white absolute left-5 bottom-0 z-[3]">
+        <p className="text-[50px] md:text-[100px] font-bold text-white absolute left-5 bottom-0 z-[3]">
           .About
         </p>
-        <p className="text-[100px] font-bold text-white absolute right-5 bottom-0 z-[3]">
+        <p className="text-[50px] md:text-[100px] font-bold text-white absolute right-5 bottom-0 z-[3]">
           Me
         </p>
         <img
           src="images/yasmeen.png"
-          className="h-[60vh] w-full object-cover grayscale duration-200 hover:grayscale-0 cursor-pointer"
+          className="h-[50vh] md:h-[60vh] w-full object-cover grayscale duration-200 hover:grayscale-0 cursor-pointer"
           alt=""
         />
       </div>
-      <div className="md:px-[200px] h-[40vh] overflow-y-auto">
+      <div className="px-[20px] md:px-[200px] h-[40vh]">
         <h2 className="font-bold text-2xl text-center my-4">
           My Name is Adanna
         </h2>
