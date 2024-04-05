@@ -17,8 +17,11 @@ const CollectionCard = ({ data: { img, id, content, name, locked }, data }) => {
       <div className="w-[30%] flex items-center justify-center text-[50px] font-black [text-shadow:_0px_5px_5px_rgb(0_0_0_/_40%)]">
         {id}
       </div>
-      <div className="w-[40%] pr-[50px] font-semibold indent-[30px]">
+      <div className="hidden md:block w-[40%] pr-[50px] font-semibold indent-[30px]">
         {content}
+      </div>
+      <div className="sm:hidden  w-[40%] pr-[50px] font-semibold indent-[30px]">
+        {name}
       </div>
       <div
         className={`flex flex-col w-[268px] cursor-pointer ${

@@ -8,7 +8,7 @@ const Collection = () => {
     <div>
       <Header />
 
-      <h2 className="text-[120px] font-black mt-[50px] font-[arial] -tracking-[10px] px-2">
+      <h2 className="text-[50px] md:text-[120px] font-black mt-[50px] font-[arial] -tracking-[5px] md:-tracking-[10px] px-2">
         Collections
       </h2>
       {collectionArray.map((e) => (

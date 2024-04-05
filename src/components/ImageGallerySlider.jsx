@@ -6,7 +6,6 @@ import { setModal } from "../redux/reducer";
 const ImageGallerySlider = () => {
   const dispatch = useDispatch();
   const handleClickImage = (data) => {
-    console.log(data);
     dispatch(setModal({ open: true, data: data }));
   };
   return (
