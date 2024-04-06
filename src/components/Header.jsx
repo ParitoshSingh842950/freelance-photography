@@ -8,7 +8,7 @@ const Header = ({ transparent, textWhite }) => {
     <div
       className={`h-[60px] fixed ${!transparent && "bg-black text-white"} ${
         textWhite && " text-white"
-      }  px-[30px] text-2xl font-semibold top-0 left-0 right-0 z-[5]`}
+      }  px-[30px] text-2xl  top-0 w-full z-[8] font-[JetBrains Mono]`}
     >
       <div className="hidden md:flex h-full items-center justify-between">
         <p className="cursor-pointer" onClick={() => window.scrollTo(0, 0)}>

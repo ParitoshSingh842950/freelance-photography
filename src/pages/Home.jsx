@@ -14,12 +14,29 @@ const Home = () => {
           ADANNA ELEJE
         </h2>
       </div>
-      <div className="w-full h-[calc(100vh-160px)] relative">
+      <div className="w-full h-[calc(100vh-160px)] relative text-white font-semibold text-xl">
         <div className="absolute inset-8">
-          <CameraOutlet />
+          <p className="p-4 ">HQ 1080P</p>
+          <p className="px-4 ">
+            <i className="fa-solid fa-clone fa-2x"></i>
+          </p>
+
+          <p className="p-4 font-[Anton] right-0 absolute top-0 font-normal flex items-center gap-2">
+            Rec
+            <div className="size-[10px] bg-red-500 rounded-full animate-pulse"></div>
+          </p>
+          <p className="p-4 bottom-0 absolute">
+            <i className="fa-solid fa-2x fa-battery-half "></i>
+          </p>
+          <p className="p-4 bottom-0 absolute right-0">00 : 47 : 19</p>
+          <CameraOutlet white />
+        </div>
+        <div className="inset-0 flex items-center justify-center absolute z-[6]">
+          <div className="rotate-90 border-2 w-[50px] border-white absolute"></div>
+          <div className=" border-2 w-[50px] border-white absolute "></div>
         </div>
         <div className="absolute inset-[20%]">
-          <CameraOutlet />
+          <CameraOutlet white />
         </div>
         <div className="relative"></div>
         <img src={banner_img} alt="" className="h-full w-full object-cover " />
