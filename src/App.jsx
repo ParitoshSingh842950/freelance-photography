@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Collection from "./pages/Collection";
 import Author from "./pages/Author";
 import Bio from "./pages/Bio";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
         <Home />
         <Collection />
         <Bio />
+        <Contact />
       </>
     ),
   },
