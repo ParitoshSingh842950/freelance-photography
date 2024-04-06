@@ -29,12 +29,12 @@ const Author = () => {
       <section className="m-4 mb-[10px] p-4 relative h-[calc(100vh-90px)] flex flex-col justify-between">
         <CameraOutlet />
         {/* Name */}
-        <div className="flex  justify-center items-center text-[11vw] font-bold font-[Anton] [text-shadow:_0px_15px_20px_rgb(0_0_0_/_40%)] ">
+        <div className="flex  justify-center items-center text-[15vw] mt-4 md:mt-0 md:text-[11vw] font-bold font-[Anton] md:[text-shadow:_0px_15px_20px_rgb(0_0_0_/_40%)] [text-shadow:_0px_5px_10px_rgb(0_0_0_/_40%)] ">
           SHOT BY ADA
         </div>
 
         {/* Intro */}
-        <div className="w-full flex items-center justify-center p-4 flex-col mt-2">
+        <div className="w-full flex items-center justify-center p-4 flex-col -mt-[100px] md:mt-2">
           <h2 className="text-2xl font-semibold">{author?.name}</h2>
           <p>
             Nulla varius volutpat turpis sed lacinia. Proin vitae facilisis
