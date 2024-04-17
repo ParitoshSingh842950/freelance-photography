@@ -102,12 +102,12 @@ const ImageGallerySlider = () => {
             // prevArrow: <SamplePrevArrow />,
           }}
         >
-          {GalleryImages.map((path) => (
+          {GalleryImages.map((path, index) => (
             <div className="h-[125px]">
               <img
                 key={path}
                 src={`images/${path}`}
-                onClick={() => handleClickImage(path)}
+                onClick={() => handleClickImage(index)}
                 className="h-[125px]  relative z-[3] w-full object-cover cursor-pointer hover:scale-95 duration-200"
               />
             </div>
@@ -126,12 +126,12 @@ const ImageGallerySlider = () => {
             // prevArrow: <SamplePrevArrow />,
           }}
         >
-          {GalleryImages.map((path) => (
+          {GalleryImages.map((path, index) => (
             <div className="h-[125px]">
               <img
                 key={path}
                 src={`images/${path}`}
-                onClick={() => handleClickImage(path)}
+                onClick={() => handleClickImage(index)}
                 className="h-[125px]  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
               />
             </div>

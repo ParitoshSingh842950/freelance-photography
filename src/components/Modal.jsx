@@ -6,7 +6,6 @@ import { GalleryImages } from "../utils/constants";
 const Modal = () => {
   const { open, index } = useSelector((state) => state.home.modal);
   const dispatch = useDispatch();
-  console.log(index);
 
   const handleNext = () => {
     let nextCount = index + 1;
