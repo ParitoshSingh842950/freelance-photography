@@ -6,8 +6,8 @@ import { setModal } from "../redux/reducer";
 
 const ImageGallerySlider = () => {
   const dispatch = useDispatch();
-  const handleClickImage = (data) => {
-    dispatch(setModal({ open: true, data: data }));
+  const handleClickImage = (index) => {
+    dispatch(setModal({ open: true, index: index }));
   };
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
@@ -53,12 +53,12 @@ const ImageGallerySlider = () => {
     <div>
       <div className="hidden md:block relative z-[3] px-4">
         <Slider {...settings}>
-          {GalleryImages.map((path) => (
+          {GalleryImages.map((path, index) => (
             <div className="h-[125px]">
               <img
                 key={path}
                 src={`images/${path}`}
-                onClick={() => handleClickImage(path)}
+                onClick={() => handleClickImage(index)}
                 className="h-[125px]  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
               />
             </div>
@@ -78,12 +78,12 @@ const ImageGallerySlider = () => {
             // prevArrow: <SamplePrevArrow />,
           }}
         >
-          {GalleryImages.map((path) => (
+          {GalleryImages.map((path, index) => (
             <div className="h-[125px]">
               <img
                 key={path}
                 src={`images/${path}`}
-                onClick={() => handleClickImage(path)}
+                onClick={() => handleClickImage(index)}
                 className="h-[125px]  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
               />
             </div>

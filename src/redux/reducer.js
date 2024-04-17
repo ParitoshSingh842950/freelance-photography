@@ -5,7 +5,7 @@ const homeReducer = createSlice({
   initialState: {
     modal: {
       open: false,
-      data: null,
+      index: 0,
     },
     author: null,
   },
