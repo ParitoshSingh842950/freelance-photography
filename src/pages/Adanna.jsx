@@ -28,7 +28,7 @@ const Adanna = () => {
           style={{
             width: expand ? "100%" : "308px",
             height: !expand && "354px",
-            marginTop: !expand && "50px",
+            marginTop: !expand ? "50px" : 0,
           }}
         >
           <img

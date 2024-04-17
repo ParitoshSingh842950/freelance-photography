@@ -7,7 +7,7 @@ const Exhibitions = () => {
   return (
     <div>
       <NewHeader />
-      <h2 className="text-[50px] md:text-[120px] font-black mt-[50px] font-[Anton]  md:-tracking-[1px] px-2">
+      <h2 className="text-[50px] md:text-[120px] font-black mt-[80px] md:mt-[50px] font-[Anton]  md:-tracking-[1px] px-2">
         Exhibitons
       </h2>
       {collectionArray.map((e) => (
