@@ -32,6 +32,32 @@ export const collectionArray = [
     locked: false,
   },
 ];
+export const travelArray = [
+  {
+    id: "01",
+    content:
+      "Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,",
+    img: "images/ct.jpg",
+    name: "IHUANYA ‘24",
+    locked: false,
+  },
+  {
+    id: "02",
+    content:
+      " Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna.",
+    img: "images/lo.jpg",
+    name: "Circa LDN ‘21",
+    locked: false,
+  },
+  {
+    id: "03",
+    content:
+      "Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,",
+    img: "images/ca.jpg",
+    name: "What Wld I Miss?",
+    locked: false,
+  },
+];
 
 export const GalleryImages = [
   "fn.jpg",

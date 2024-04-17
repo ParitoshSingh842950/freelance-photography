@@ -3,13 +3,18 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setAuthor } from "../redux/reducer";
 
-const CollectionCard = ({ data: { img, id, content, name, locked }, data }) => {
+const CollectionCard = ({
+  data: { img, id, content, name, locked },
+  data,
+  disabled,
+}) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleClick = () => {
+    if (disabled) return;
     dispatch(setAuthor(data));
-    navigate("/collection");
+    navigate("/author");
   };
 
   return (
@@ -38,7 +43,7 @@ const CollectionCard = ({ data: { img, id, content, name, locked }, data }) => {
           src={img}
           className={`${
             locked && "grayscale"
-          } md:h-[178px] md:w-[268px] w-full object-cover md:aspect-auto aspect-video`}
+          } md:h-[178px] md:w-[268px] w-full object-cover md:aspect-auto grayscale hover:grayscale-0 duration-200 aspect-video`}
         />
         <span className="hidden md:block ml-auto font-bold">{name}</span>
       </div>

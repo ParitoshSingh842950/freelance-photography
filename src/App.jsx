@@ -5,22 +5,48 @@ import Collection from "./pages/Collection";
 import Author from "./pages/Author";
 import Bio from "./pages/Bio";
 import Contact from "./pages/Contact";
+import HomePage from "./pages/HomePage";
+import Adanna from "./pages/Adanna";
+import Options from "./pages/Options";
+import Exhibitions from "./pages/Exhibitions";
+import Travel from "./pages/Travel";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <>
-        <Home />
-        <Collection />
-        <Bio />
-        <Contact />
-      </>
-    ),
+    element: <HomePage />,
+  },
+  {
+    path: "/adanna-eleje",
+    element: <Adanna />,
+  },
+  {
+    path: "/options",
+    element: <Options />,
   },
   {
     path: "/collection",
+    element: <Collection />,
+  },
+  {
+    path: "/exhibition",
+    element: <Exhibitions />,
+  },
+  {
+    path: "/travel",
+    element: <Travel />,
+  },
+  {
+    path: "/bio",
+    element: <Bio />,
+  },
+  {
+    path: "/author",
     element: <Author />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 

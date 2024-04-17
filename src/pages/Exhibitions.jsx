@@ -1,21 +1,24 @@
 import React from "react";
 import CollectionCard from "../components/CollectionCard";
 import { collectionArray } from "../utils/constants";
-import Header from "../components/Header";
 import NewHeader from "../components/NewHeader";
 
-const Collection = () => {
+const Exhibitions = () => {
   return (
-    <div id="collection">
+    <div>
       <NewHeader />
       <h2 className="text-[50px] md:text-[120px] font-black mt-[50px] font-[Anton]  md:-tracking-[1px] px-2">
-        Collections
+        Exhibitons
       </h2>
       {collectionArray.map((e) => (
-        <CollectionCard data={e} key={e.id} />
+        <CollectionCard
+          data={e}
+          key={e.id}
+          // disabled
+        />
       ))}
     </div>
   );
 };
 
-export default Collection;
+export default Exhibitions;

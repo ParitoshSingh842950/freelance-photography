@@ -11,13 +11,13 @@ const Header = ({ transparent, textWhite }) => {
       }  px-[30px] text-2xl  top-0 w-full z-[8] font-[JetBrains Mono]`}
     >
       <div className="hidden md:flex h-full items-center justify-between">
-        <p className="cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+        <p className="cursor-pointer" onClick={() => navigate("/")}>
           Home
         </p>
-        <a href="#collection">Collections</a>
+        <button onClick={() => navigate("/collection")}>Collection</button>
         <div className="flex gap-5">
-          <a href="#bio">Bio</a>
-          <a href="#contact">Contact</a>
+          <button onClick={() => navigate("/bio")}>Bio</button>
+          <button onClick={() => navigate("/contact")}>Contact</button>
         </div>
       </div>
 
@@ -30,12 +30,15 @@ const Header = ({ transparent, textWhite }) => {
             <p className="ml-auto" onClick={() => setMenu(false)}>
               <i className="fa-solid fa-x"></i>
             </p>
-            <p className="cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+            <p
+              className="cursor-pointer"
+              onClick={() => navigate("/collection")}
+            >
               Home
             </p>
-            <a href="#collection">Collections</a>
-            <a href="#bio">Bio</a>
-            <a href="#contact">Contact</a>
+            <button onClick={() => navigate("/collection")}>Collection</button>
+            <button onClick={() => navigate("/bio")}>Bio</button>
+            <button onClick={() => navigate("/contact")}>Contact</button>
           </div>
         )}
       </div>
