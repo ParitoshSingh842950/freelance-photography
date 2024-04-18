@@ -2,6 +2,7 @@
   "name": "chamoli",
   "private": true,
   "version": "0.0.0",
+  "author":"Jayant",
   "type": "module",
   "scripts": {
     "dev": "vite",

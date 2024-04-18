@@ -60,13 +60,123 @@ export const travelArray = [
 ];
 
 export const GalleryImages = [
-  "fn.jpg",
-  "boy2.jpg",
-  "moonlight.jpg",
-  "msqu.jpg",
-  "finalbyz.jpg",
-  "beach.jpg",
-  "boat.jpg",
-  "hq.jpg",
-  "ggirl.jpg",
+  {
+    img: "fn.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    img: "boy2.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    img: "moonlight.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+
+  {
+    img: "beach.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    img: "boat.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    img: "hq.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+
+  {
+    img: "ggirl.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    img: "finalbyz.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    img: "msqu.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
 ];

@@ -23,23 +23,23 @@ const Modal = () => {
       onClick={() => dispatch(setModal({ open: false, index: 0 }))}
     >
       <div
-        className="w-[98vw] h-[70vh] md:w-[60vw] p-4 flex bg-black md:h-[90vh] relative"
+        className="w-[90vw] h-[70vh] md:w-[60vw] p-4 flex bg-black md:h-[90vh] relative"
         onClick={(e) => e.stopPropagation()}
       >
         <i
-          className="fa-solid fa-caret-right absolute right-3 top-[40%] z-[2] text-[100px] text-[rgba(255,255,255,0.7)] cursor-pointer hover:text-[rgba(255,255,255)] duration-200"
+          className="fa-solid fa-caret-right absolute md:-right-3 -right-6 top-[40%] z-[2] text-[100px] text-[rgba(255,255,255,0.7)] cursor-pointer hover:text-[rgba(255,255,255)] duration-200"
           onClick={handleNext}
         ></i>
         <div className="w-1/2 p-4 md:pl-14 h-full overflow-y-auto flex flex-col items-center">
           <img
             className="w-full aspect-square object-cover grayscale"
-            src={`images/${GalleryImages[index || 0]}`}
+            src={`images/${GalleryImages[index || 0].img}`}
           />
           <div className="text-[12px] text-white leading-3 tracking-wide py-1 w-full">
-            <p>Boy With Ballons</p>
-            <p>August '24</p>
-            <p>30 x 35in</p>
-            <p>Photograph shot on Leika 990</p>
+            <p>{GalleryImages[index || 0].heading}</p>
+            <p>{GalleryImages[index || 0].date}</p>
+            <p>{GalleryImages[index || 0].size}</p>
+            <p>{GalleryImages[index || 0].line}</p>
           </div>
 
           <img src="images/Line 7.png" className="my-12" alt="" />
@@ -47,21 +47,17 @@ const Modal = () => {
           <div className="text-white ">
             <h3 className="text-yellow-600 text-center">Description</h3>
             <p className="indent-[30px] md:text-md text-sm ">
-              Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.
+              {GalleryImages[index || 0].desc1}
               <br />
               <br />
-              Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra.
+              {GalleryImages[index || 0].desc2}
             </p>
           </div>
         </div>
         <div className="md:p-4 h-full w-1/2 ">
           <img
             className="h-full w-full object-cover"
-            src={`images/${GalleryImages[index || 0]}`}
+            src={`images/${GalleryImages[index || 0].img}`}
             alt=""
           />
         </div>

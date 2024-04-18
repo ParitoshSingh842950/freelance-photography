@@ -56,8 +56,8 @@ const ImageGallerySlider = () => {
           {GalleryImages.map((path, index) => (
             <div className="h-[125px]">
               <img
-                key={path}
-                src={`images/${path}`}
+                key={path.img}
+                src={`images/${path.img}`}
                 onClick={() => handleClickImage(index)}
                 className="h-[125px]  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
               />
@@ -65,7 +65,7 @@ const ImageGallerySlider = () => {
           ))}
         </Slider>
       </div>
-      <div className="block md:hidden relative z-[3] px-4">
+      <div className="block md:hidden relative z-[3] px-4 ">
         <Slider
           {...{
             infinite: true,
@@ -81,10 +81,10 @@ const ImageGallerySlider = () => {
           {GalleryImages.map((path, index) => (
             <div className="h-[125px]">
               <img
-                key={path}
-                src={`images/${path}`}
+                key={path.img}
+                src={`images/${path.img}`}
                 onClick={() => handleClickImage(index)}
-                className="h-[125px]  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
+                className="h-[125px] w-full  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
               />
             </div>
           ))}
@@ -105,8 +105,8 @@ const ImageGallerySlider = () => {
           {GalleryImages.map((path, index) => (
             <div className="h-[125px]">
               <img
-                key={path}
-                src={`images/${path}`}
+                key={path.img}
+                src={`images/${path.img}`}
                 onClick={() => handleClickImage(index)}
                 className="h-[125px]  relative z-[3] w-full object-cover cursor-pointer hover:scale-95 duration-200"
               />
@@ -129,10 +129,10 @@ const ImageGallerySlider = () => {
           {GalleryImages.map((path, index) => (
             <div className="h-[125px]">
               <img
-                key={path}
-                src={`images/${path}`}
+                key={path.img}
+                src={`images/${path.img}`}
                 onClick={() => handleClickImage(index)}
-                className="h-[125px]  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
+                className="h-[125px] w-full relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
               />
             </div>
           ))}
