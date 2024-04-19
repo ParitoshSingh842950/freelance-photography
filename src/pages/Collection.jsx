@@ -17,7 +17,7 @@ const Collection = () => {
       <NewHeader />
       <h2
         className={`${
-          !animate ? "translate-y-0" : "translate-y-[20px]"
+          !animate ? "translate-y-0" : "translate-y-[10px]"
         } duration-700 text-[50px] md:text-[120px] font-black  font-[Anton]  md:-tracking-[1px] px-2`}
       >
         Collections
