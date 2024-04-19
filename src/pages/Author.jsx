@@ -42,7 +42,7 @@ const Author = () => {
         <div
           className={`${
             animate ? "translate-y-0" : "-translate-y-[20px]"
-          } duration-1000 w-full flex items-center justify-center p-4 flex-col -mt-[100px] md:mt-2`}
+          } duration-1000 w-full flex items-center justify-center p-4 flex-col -mt-[20px] md:mt-2`}
         >
           <h2 className="text-2xl font-semibold">{author?.name}</h2>
           <p>
