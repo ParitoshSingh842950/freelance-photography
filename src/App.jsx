@@ -10,6 +10,8 @@ import Adanna from "./pages/Adanna";
 import Options from "./pages/Options";
 import Exhibitions from "./pages/Exhibitions";
 import Travel from "./pages/Travel";
+import Cart from "./pages/Cart";
+import Prints from "./pages/Prints";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
+  },
+  {
+    path: "/prints",
+    element: <Prints />,
   },
 ]);
 

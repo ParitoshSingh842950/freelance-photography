@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NewHeader from "../components/NewHeader";
 
 const Contact = () => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimate(true);
+    }, 200);
+  }, []);
   return (
     <>
       <NewHeader />
-      <div className="p-4 mt-[100px] md:mt-16" id="contact">
+      <div className="p-4" id="contact">
         <div className="w-full md:flex">
           <div className=" md:w-2/3 p-4 font-[Anton]   text-[30px] md:text-[70px] uppercase">
             <p>A Creative Director / </p>

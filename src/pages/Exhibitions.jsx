@@ -18,7 +18,7 @@ const Exhibitions = () => {
       <h2
         className={`${
           !animate ? "translate-y-0" : "translate-y-[20px]"
-        } duration-700 text-[50px] md:text-[120px] font-black mt-[80px] md:mt-[50px] font-[Anton]  md:-tracking-[1px] px-2`}
+        } duration-700 text-[50px] md:text-[120px] font-black  font-[Anton]  md:-tracking-[1px] px-2`}
       >
         Exhibitons
       </h2>

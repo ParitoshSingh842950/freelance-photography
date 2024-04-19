@@ -3,7 +3,7 @@ import NewHeader from "../components/NewHeader";
 
 const Bio = () => {
   return (
-    <div id="bio" className="mt-16">
+    <div>
       <NewHeader />
       <div className="relative">
         <p className="text-[50px] md:text-[100px] font-bold text-white absolute left-5 bottom-0 z-[3]">

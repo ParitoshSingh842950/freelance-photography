@@ -17,7 +17,7 @@ const Adanna = () => {
     <div>
       <NewHeader />
       <h2
-        className="mt-[50px] text-center font-bold text-[3rem] md:text-[8rem] text-[arial] duration-[1s]"
+        className=" text-center font-bold text-[3rem] md:text-[8rem] text-[arial] duration-[1s]"
         style={{ fontSize: !fontSize && 0 }}
       >
         Adanna Eleje

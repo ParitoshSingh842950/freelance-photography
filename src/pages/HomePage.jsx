@@ -11,7 +11,7 @@ const HomePage = () => {
         <img
           src="images/yasmeen.png"
           alt=""
-          className="w-[308px] h-[354px] object-cover mt-[100px] cursor-pointer"
+          className="w-[308px] h-[354px] object-cover mt-[50px] cursor-pointer"
           onClick={() => navigate("/adanna-eleje")}
         />
         <div className="flex gap-10 text-sm font-bold mt-8">

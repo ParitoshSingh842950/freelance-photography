@@ -15,7 +15,7 @@ const Options = () => {
   return (
     <div>
       <NewHeader />
-      <div className="h-screen w-full flex items-center justify-evenly flex-wrap mt-[100px] md:mt-0">
+      <div className="w-full flex items-center justify-evenly flex-wrap mt-[50px]">
         <img
           src="images/polaroid_exhibiton.png"
           className={`${
