@@ -27,7 +27,7 @@ const Modal = () => {
         onClick={(e) => e.stopPropagation()}
       >
         <i
-          className="fa-solid fa-caret-right absolute md:-right-3 -right-6 top-[40%] z-[2] text-[100px] text-[rgba(255,255,255,0.7)] cursor-pointer hover:text-[rgba(255,255,255)] duration-200"
+          className="fa-solid fa-caret-right absolute -right-3  md:top-[43%] top-[45%] z-[2] text-[60px] md:text-[80px] text-[rgba(255,255,255,0.7)] cursor-pointer hover:text-[rgba(255,255,255)] duration-200"
           onClick={handleNext}
         ></i>
         <div className="w-1/2 p-4 md:pl-14 h-full overflow-y-auto flex flex-col items-center">

@@ -66,7 +66,7 @@ const ImageGallerySlider = () => {
         </Slider>
       </div>
       <div className="block md:hidden relative z-[3] px-4 ">
-        <Slider
+        {/* <Slider
           {...{
             infinite: true,
             speed: 500,
@@ -88,7 +88,7 @@ const ImageGallerySlider = () => {
               />
             </div>
           ))}
-        </Slider>
+        </Slider> */}
         <Slider
           {...{
             // dots: true,
@@ -98,8 +98,8 @@ const ImageGallerySlider = () => {
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 4000,
-            // nextArrow: <SamplePrevArrow />,
-            // prevArrow: <SamplePrevArrow />,
+            nextArrow: <SamplePrevArrow />,
+            prevArrow: <SamplePrevArrow />,
           }}
         >
           {GalleryImages.map((path, index) => (
@@ -122,8 +122,8 @@ const ImageGallerySlider = () => {
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 4000,
-            // nextArrow: <SamplePrevArrow />,
-            // prevArrow: <SamplePrevArrow />,
+            nextArrow: <SamplePrevArrow />,
+            prevArrow: <SamplePrevArrow />,
           }}
         >
           {GalleryImages.map((path, index) => (
