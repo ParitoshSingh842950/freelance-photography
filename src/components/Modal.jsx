@@ -23,14 +23,14 @@ const Modal = () => {
       onClick={() => dispatch(setModal({ open: false, index: 0 }))}
     >
       <div
-        className="w-[90vw] h-[70vh] md:w-[60vw] p-4 flex bg-black md:h-[90vh] relative"
+        className="w-[90vw]  md:w-[60vw] p-4 flex bg-black h-[90vh] relative"
         onClick={(e) => e.stopPropagation()}
       >
         <i
           className="fa-solid fa-caret-right absolute -right-3  md:top-[43%] top-[45%] z-[2] text-[60px] md:text-[80px] text-[rgba(255,255,255,0.7)] cursor-pointer hover:text-[rgba(255,255,255)] duration-200"
           onClick={handleNext}
         ></i>
-        <div className="w-1/2 p-4 md:pl-14 h-full overflow-y-auto flex flex-col items-center">
+        <div className="w-full md:w-1/2 p-4 md:pl-14 h-full overflow-y-auto flex flex-col items-center">
           <img
             className="w-full aspect-square object-cover grayscale"
             src={`images/${GalleryImages[index || 0].img}`}
@@ -54,7 +54,7 @@ const Modal = () => {
             </p>
           </div>
         </div>
-        <div className="md:p-4 h-full w-1/2 ">
+        <div className="md:p-4 h-full w-1/2 hidden md:block">
           <img
             className="h-full w-full object-cover"
             src={`images/${GalleryImages[index || 0].img}`}
