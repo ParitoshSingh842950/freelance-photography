@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NewHeader from "../components/NewHeader";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // When the component mounts, set isVisible to true to trigger the fade-in effect
+    setIsVisible(false);
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 200);
+  }, [location]);
   return (
-    <div>
+    <div
+      className={` ${
+        isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
+      }`}
+    >
       <NewHeader />
       <div className="w-full flex flex-col items-center">
         <img

@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NewHeader from "../components/NewHeader";
+import { useLocation } from "react-router-dom";
 
 const Bio = () => {
+  const location = useLocation();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // When the component mounts, set isVisible to true to trigger the fade-in effect
+    setIsVisible(false);
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 200);
+  }, [location]);
   return (
-    <div>
+    <div
+      className={` ${
+        isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
+      }`}
+    >
       <NewHeader />
       <div className="relative">
         <p className="text-[50px] md:text-[100px] font-bold text-white absolute left-5 bottom-0 z-[3]">

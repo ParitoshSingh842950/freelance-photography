@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import CameraOutlet from "../components/CameraOutlet";
 import Modal from "../components/Modal";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import NewHeader from "../components/NewHeader";
 
 const Author = () => {
@@ -22,8 +22,22 @@ const Author = () => {
     window.location.href = "/";
   }
 
+  const location = useLocation();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // When the component mounts, set isVisible to true to trigger the fade-in effect
+    setIsVisible(false);
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 200);
+  }, [location]);
   return (
-    <div>
+    <div
+      className={` ${
+        isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
+      }`}
+    >
       {/* <Header /> */}
       <NewHeader />
       <section className="m-4 mb-0 p-4 relative h-[calc(100vh-90px)] flex flex-col justify-between">

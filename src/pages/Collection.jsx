@@ -3,6 +3,7 @@ import CollectionCard from "../components/CollectionCard";
 import { collectionArray } from "../utils/constants";
 import Header from "../components/Header";
 import NewHeader from "../components/NewHeader";
+import { useLocation } from "react-router-dom";
 
 const Collection = () => {
   const [animate, setAnimate] = useState(false);
@@ -12,8 +13,22 @@ const Collection = () => {
       setAnimate(true);
     }, 200);
   }, []);
+  const location = useLocation();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // When the component mounts, set isVisible to true to trigger the fade-in effect
+    setIsVisible(false);
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 200);
+  }, [location]);
   return (
-    <div id="collection">
+    <div
+      className={` ${
+        isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
+      }`}
+    >
       <NewHeader />
       <h2
         className={`${
