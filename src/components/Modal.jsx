@@ -32,7 +32,7 @@ const Modal = () => {
         ></i>
         <div className="w-full md:w-1/2 p-4 md:pl-14 h-full overflow-y-auto flex flex-col items-center">
           <img
-            className="w-full aspect-square object-cover grayscale"
+            className="w-full aspect-square object-cover md:grayscale"
             src={`images/${GalleryImages[index || 0].img}`}
           />
           <div className="text-[12px] text-white leading-3 tracking-wide py-1 w-full">
