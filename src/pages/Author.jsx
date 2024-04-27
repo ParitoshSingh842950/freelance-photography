@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ImageGallerySlider from "../components/ImageGallerySlider";
-import Header from "../components/Header";
 import CameraOutlet from "../components/CameraOutlet";
 import Modal from "../components/Modal";
 import { useSelector } from "react-redux";

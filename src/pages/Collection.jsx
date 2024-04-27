@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CollectionCard from "../components/CollectionCard";
 import { collectionArray } from "../utils/constants";
-import Header from "../components/Header";
 import NewHeader from "../components/NewHeader";
 import { useLocation } from "react-router-dom";
 

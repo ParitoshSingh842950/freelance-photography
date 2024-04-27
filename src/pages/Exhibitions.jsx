@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CollectionCard from "../components/CollectionCard";
-import { collectionArray } from "../utils/constants";
+import { exhibitionArray } from "../utils/constants";
 import NewHeader from "../components/NewHeader";
 import { useLocation } from "react-router-dom";
 
@@ -37,7 +37,7 @@ const Exhibitions = () => {
       >
         Exhibitons
       </h2>
-      {collectionArray.map((e, i) => (
+      {exhibitionArray.map((e, i) => (
         <CollectionCard
           data={e}
           key={e.id}
