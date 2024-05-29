@@ -78,7 +78,7 @@ export const travelArray = [
       " Documenting my time in Toronto and Niagara Falls has been an exhilarating journey through urban vibrancy and natural wonder. In Toronto, the striking skyline, eclectic neighborhoods, and bustling street scenes offer a dynamic backdrop that captures the city's diverse and lively spirit. Contrasting this urban energy, the majestic beauty of Niagara Falls, with its thundering cascades and misty rainbows, presents a breathtaking spectacle of nature's power and serenity. Through my lens, I aim to share the unique stories and awe-inspiring moments from these two captivating destinations, showcasing the incredible contrasts and connections that make this part of Canada so remarkable.",
     img: "images/lo.jpg",
     name: "6IX ‘22",
-    paragraph: "To be filled later",
+    paragraph: "To be filled later and to be leter",
     locked: false,
   },
 ];
