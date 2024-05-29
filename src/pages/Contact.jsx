@@ -31,7 +31,7 @@ const Contact = () => {
         <div className="uppercase md:text-[30px] flex">
           <div className="w-1/2">
             <img
-              src="https://s3-alpha-sig.figma.com/img/ca49/2570/62e3feb094e8c2844bb4fd807def162e?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p7TDghWCY0WJWn3LyR8bttXOJJJwHtz~QT18gjLb1r5NRx35VkWGhlJeF3-W4RrlqCY0WOuPqsCWDrc0tALfo0PiA9LYNYaYKoo3nYZAYBIFaixrQpby0mHZ~vROnwvI05d7T5yQTcxmEsQiGBWTnibtRIoprrhKUrCyn8NIMf1ZWhltbjaHnI6COS-oqAsxFEMV~QKVNb1wKzuSube4ORaTlqOIPs--G3p3NS4GndYIxGkUNEMWCNuqNBM658TuVLrUs3uKZ~lKyWk0E~N4W0XWP7A~zhLEGKZl9YX0wt3vZkw6hI9DYdDJHJL91PS4wQD8Ni6wLmhEWNf9Zo5WlA__"
+              src="images/ada_walking png.png"
               alt=""
               className="md:hidden w-[90%] aspect-square object-cover "
             />

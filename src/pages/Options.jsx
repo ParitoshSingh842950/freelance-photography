@@ -22,32 +22,32 @@ const Options = () => {
       setIsVisible(true);
     }, 200);
   }, [location]);
+
   return (
     <div
-      className={` ${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
-        }`}
+      className={` ${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"}`}
     >
       <NewHeader />
-      <div className="h-[calc(100vh-80px)] w-full flex items-center justify-evenly flex-wrap  ">
+      <div className="h-[calc(100vh-80px)] w-full flex items-center justify-evenly flex-wrap">
         <img
           src="images/polaroid_exhibiton.png"
           className={`${animate ? "translate-y-0" : "translate-y-[30px]"
-            } md:h-[400px] object-contain  cursor-pointer hover:ring-4 ring-[white] duration-1000 hover:shadow-lg`}
-          alt=""
+            } md:h-[500px] object-contain cursor-pointer hover:ring-4 ring-[white] duration-1000 hover:shadow-lg`}
+          alt="Exhibition"
           onClick={() => navigate("/exhibition")}
         />
         <img
           src="images/polaroid_personal.png"
-          alt=""
           className={`${animate ? "translate-y-0" : "-translate-y-[30px]"
-            } md:h-[400px] object-contain  cursor-pointer hover:ring-4 ring-[white] duration-1000  hover:shadow-lg`}
+            } md:h-[500px] object-contain cursor-pointer hover:ring-4 ring-[white] duration-1000 hover:shadow-lg`}
+          alt="Personal Collection"
           onClick={() => navigate("/collection")}
         />
         <img
           src="images/polaroid_travel.png"
-          alt=""
           className={`${animate ? "translate-y-0" : "translate-y-[30px]"
-            } md:h-[400px] object-contain  cursor-pointer hover:ring-4 ring-[white] duration-1000  hover:shadow-lg`}
+            } md:h-[500px] object-contain cursor-pointer hover:ring-4 ring-[white] duration-1000 hover:shadow-lg`}
+          alt="Travel"
           onClick={() => navigate("/travel")}
         />
       </div>
