@@ -69,7 +69,7 @@ export const travelArray = [
       "London, a city where history and modernity blend seamlessly, offers an endless canvas forphotographer's lens. From the timeless charm of its cobblestone streets and iconic landmarks like the Tower Bridge and Big Ben to the vibrant energy of its diverse neighborhoods and bustling markets, every corner of London tells a unique story. Capturing the interplay of light and shadow against its historic architecture, the vibrant hues of street art, and the candid moments of everyday life, my journey through London is a visual narrative of a city that is ever-evolving yet deeply rooted in its rich heritage.",
     img: "images/ct.jpg",
     name: "CIRCA LONDON ‘21",
-    paragraph: "Explore the beautiful city of London through my lens",
+    paragraph: "Explore the beautiful city of London through my lens ndkghvdjdkvnl",
     locked: false,
   },
   {
