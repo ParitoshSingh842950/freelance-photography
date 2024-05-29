@@ -31,7 +31,7 @@ const ImageGallerySlider = ({ data }) => {
     // dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 8,
+    slidesToShow: GalleryImages.filter((e) => e.author == data.name).length,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -49,20 +49,23 @@ const ImageGallerySlider = ({ data }) => {
     nextArrow: <SamplePrevArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+
   return (
     <div>
       <div className="hidden md:block relative z-[3] px-4">
         <Slider {...settings}>
-          {GalleryImages.filter(e => e.author == data.author).map((path, index) => (
-            <div className="h-[125px]">
-              <img
-                key={path.img}
-                src={`images/${path.img}`}
-                onClick={() => handleClickImage(index)}
-                className="h-[125px]  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
-              />
-            </div>
-          ))}
+          {GalleryImages.filter((e) => e.author == data.name).map(
+            (path, index) => (
+              <div className="h-[125px]">
+                <img
+                  key={path.img}
+                  src={`images/${path.img}`}
+                  onClick={() => handleClickImage(index)}
+                  className="h-[125px]  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
+                />
+              </div>
+            )
+          )}
         </Slider>
       </div>
       <div className="block md:hidden relative z-[3] px-4 ">
@@ -102,16 +105,18 @@ const ImageGallerySlider = ({ data }) => {
             prevArrow: <SamplePrevArrow />,
           }}
         >
-          {GalleryImages.map((path, index) => (
-            <div className="h-[125px]">
-              <img
-                key={path.img}
-                src={`images/${path.img}`}
-                onClick={() => handleClickImage(index)}
-                className="h-[125px]  relative z-[3] w-full object-cover cursor-pointer hover:scale-95 duration-200"
-              />
-            </div>
-          ))}
+          {GalleryImages.filter((e) => e.author == data.name).map(
+            (path, index) => (
+              <div className="h-[125px]">
+                <img
+                  key={path.img}
+                  src={`images/${path.img}`}
+                  onClick={() => handleClickImage(index)}
+                  className="h-[125px]  relative z-[3] w-full object-cover cursor-pointer hover:scale-95 duration-200"
+                />
+              </div>
+            )
+          )}
         </Slider>
 
         <Slider
@@ -126,16 +131,18 @@ const ImageGallerySlider = ({ data }) => {
             prevArrow: <SamplePrevArrow />,
           }}
         >
-          {GalleryImages.map((path, index) => (
-            <div className="h-[125px]">
-              <img
-                key={path.img}
-                src={`images/${path.img}`}
-                onClick={() => handleClickImage(index)}
-                className="h-[125px] w-full relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
-              />
-            </div>
-          ))}
+          {GalleryImages.filter((e) => e.author == data.name).map(
+            (path, index) => (
+              <div className="h-[125px]">
+                <img
+                  key={path.img}
+                  src={`images/${path.img}`}
+                  onClick={() => handleClickImage(index)}
+                  className="h-[125px] w-full relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
+                />
+              </div>
+            )
+          )}
         </Slider>
       </div>
     </div>

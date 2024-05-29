@@ -10,31 +10,29 @@ export const exhibitionArray = [
   },
   {
     id: "02",
-    content:
-      ` This collection of images delves into the heart of a conflicted journey—embracing one's queerness while navigating the complexities of a traditional Nigerian household.Through evocative portraits and symbolic visual narratives, this series captures the inner turmoil, resilience, and ultimate acceptance of identity."Can't Think Straight" stands as a testament to the courage of queer individuals who are often told they are a sin, offering a space for reflection, understanding, and solidarity. It is a visual narrative
+    content: ` This collection of images delves into the heart of a conflicted journey—embracing one's queerness while navigating the complexities of a traditional Nigerian household.Through evocative portraits and symbolic visual narratives, this series captures the inner turmoil, resilience, and ultimate acceptance of identity."Can't Think Straight" stands as a testament to the courage of queer individuals who are often told they are a sin, offering a space for reflection, understanding, and solidarity. It is a visual narrative
       for those who struggle to see clearly in the face of internal and external conflict,ultimately finding the clarity to embrace who they truly are.`,
     img: "images/lo.jpg",
     name: "CAN’T THINK STRAIGHT ‘24",
-    paragraph: "Embracing one's true self amidst the storm of doubt illuminates the path to self-acceptance.",
+    paragraph:
+      "Embracing one's true self amidst the storm of doubt illuminates the path to self-acceptance.",
     locked: false,
   },
   {
     id: "03",
-    content:
-      `This collection serves as a reflection of myself as an artist, grappling with severe depression on a daily basis. Through my photography, I capture the most poignant moments of my life, those I will dearly miss upon my departure. Each image is presented in both black and white and color, with the monochrome version representing the somber and desolate periods of life, while the color rendition reveals the hidden brightness and beauty within these moments, often overlooked in their initial gloominess.`,
+    content: `This collection serves as a reflection of myself as an artist, grappling with severe depression on a daily basis. Through my photography, I capture the most poignant moments of my life, those I will dearly miss upon my departure. Each image is presented in both black and white and color, with the monochrome version representing the somber and desolate periods of life, while the color rendition reveals the hidden brightness and beauty within these moments, often overlooked in their initial gloominess.`,
     img: "https://s3-alpha-sig.figma.com/img/f064/5637/dbd28f4e2487f85947d0e4d723959ac3?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko8S-4TfVQe86Wtshlsc6j6lGttlODcGhBi0FpAB3KISFXjmdohu7EmJUGfZkd1uU1k8Cb3-waD4RNZwFlIyGao6QL1ku8E6hTTiTEPGprhZjkjSoozoEzyFKdWpEYdL84LYeph7ksWl6NQ-jLGfCfB6zVqrqcKNIh74yTyM3Kztk7D2vKPkreUnbvwPBhKApP8awQVlJu0zp1EovrQzGlVBMs0R9E8DbXCh6mARA5Ld4OZKavFzqX0XitMcumLtHAKwxEJ~FLuyjOkt2dZ-MmWHM4pivSyxWuoUQz4ib5srKW2eG4ozN19NDsvr3qC59IfmuxKCVh4lEp945Dhlrw__",
     name: "WHAT WOULD I MISS?",
-    paragraph: "Echoes of Existence: Capturing Life's Contrasts Through Depression's Lens",
+    paragraph:
+      "Echoes of Existence: Capturing Life's Contrasts Through Depression's Lens",
     locked: false,
   },
 ];
 
-
 export const collectionArray = [
   {
     id: "01",
-    content:
-      `Golden Sand Beach, also known as Ndibe Sand Beach, is located in the Afikpo LGA of Ebonyi State. This idyllic destination is perfect for picnics, relaxation, sunbathing, sport fishing, canoe racing, swimming, fishing, yachting, shell exploration, and more. The
+    content: `Golden Sand Beach, also known as Ndibe Sand Beach, is located in the Afikpo LGA of Ebonyi State. This idyllic destination is perfect for picnics, relaxation, sunbathing, sport fishing, canoe racing, swimming, fishing, yachting, shell exploration, and more. The
       beach buzzes with activities on weekends and during festive periods, drawing large
       crowds.`,
     img: "images/boat.jpg",
@@ -44,8 +42,7 @@ export const collectionArray = [
   },
   {
     id: "02",
-    content:
-      ` Afikpo, the village from which my parents and grandparents hail, is a place I am fortunate enough to visit every year during the Christmas break. This place never ceasesto feel like home. The people, the culture, the joy—it's home.`,
+    content: ` Afikpo, the village from which my parents and grandparents hail, is a place I am fortunate enough to visit every year during the Christmas break. This place never ceasesto feel like home. The people, the culture, the joy—it's home.`,
     img: "images/lo.jpg",
     name: "AFIKPO ‘23",
     paragraph: "Explore the beauty of my roots through my lens",
@@ -53,8 +50,7 @@ export const collectionArray = [
   },
   {
     id: "03",
-    content:
-      ` This project, featuring Vanina the model, is one of my first editorial-style endeavors and holds a special place in my heart.`,
+    content: ` This project, featuring Vanina the model, is one of my first editorial-style endeavors and holds a special place in my heart.`,
     img: "https://s3-alpha-sig.figma.com/img/f064/5637/dbd28f4e2487f85947d0e4d723959ac3?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko8S-4TfVQe86Wtshlsc6j6lGttlODcGhBi0FpAB3KISFXjmdohu7EmJUGfZkd1uU1k8Cb3-waD4RNZwFlIyGao6QL1ku8E6hTTiTEPGprhZjkjSoozoEzyFKdWpEYdL84LYeph7ksWl6NQ-jLGfCfB6zVqrqcKNIh74yTyM3Kztk7D2vKPkreUnbvwPBhKApP8awQVlJu0zp1EovrQzGlVBMs0R9E8DbXCh6mARA5Ld4OZKavFzqX0XitMcumLtHAKwxEJ~FLuyjOkt2dZ-MmWHM4pivSyxWuoUQz4ib5srKW2eG4ozN19NDsvr3qC59IfmuxKCVh4lEp945Dhlrw__",
     name: "THE VAN PROJECT",
     paragraph: "Model: Vanina height: 180cm",
@@ -83,7 +79,6 @@ export const travelArray = [
   },
 ];
 
-
 export const GalleryImages = [
   {
     author: "NDIBE BEACH ‘23",
@@ -99,110 +94,402 @@ export const GalleryImages = [
     desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
     aptent taciti sociosqu ad litora torquent per conubia nostra.`,
   },
-  // {
-  //   img: "boy2.jpg",
-  //   heading: "Boy With Ballons",
-  //   date: "August '24",
-  //   size: "30 x 35in",
-  //   line: "Photograph shot on Leika 990",
-  //   desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-  // turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-  // nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-  // tellus elit sed risus.`,
-  //   desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-  //   aptent taciti sociosqu ad litora torquent per conubia nostra.`,
-  // },
-  // {
-  //   img: "moonlight.jpg",
-  //   heading: "Boy With Ballons",
-  //   date: "August '24",
-  //   size: "30 x 35in",
-  //   line: "Photograph shot on Leika 990",
-  //   desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-  // turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-  // nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-  // tellus elit sed risus.`,
-  //   desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-  //   aptent taciti sociosqu ad litora torquent per conubia nostra.`,
-  // },
 
-  // {
-  //   img: "beach.jpg",
-  //   heading: "Boy With Ballons",
-  //   date: "August '24",
-  //   size: "30 x 35in",
-  //   line: "Photograph shot on Leika 990",
-  //   desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-  // turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-  // nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-  // tellus elit sed risus.`,
-  //   desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-  //   aptent taciti sociosqu ad litora torquent per conubia nostra.`,
-  // },
-  // {
-  //   img: "boat.jpg",
-  //   heading: "Boy With Ballons",
-  //   date: "August '24",
-  //   size: "30 x 35in",
-  //   line: "Photograph shot on Leika 990",
-  //   desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-  // turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-  // nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-  // tellus elit sed risus.`,
-  //   desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-  //   aptent taciti sociosqu ad litora torquent per conubia nostra.`,
-  // },
-  // {
-  //   img: "hq.jpg",
-  //   heading: "Boy With Ballons",
-  //   date: "August '24",
-  //   size: "30 x 35in",
-  //   line: "Photograph shot on Leika 990",
-  //   desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-  // turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-  // nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-  // tellus elit sed risus.`,
-  //   desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-  //   aptent taciti sociosqu ad litora torquent per conubia nostra.`,
-  // },
+  {
+    author: "NDIBE BEACH ‘23",
+    img: "personal projects/Ndibe Beach/DSC05426-Edit.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
 
-  // {
-  //   img: "ggirl.jpg",
-  //   heading: "Boy With Ballons",
-  //   date: "August '24",
-  //   size: "30 x 35in",
-  //   line: "Photograph shot on Leika 990",
-  //   desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-  // turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-  // nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-  // tellus elit sed risus.`,
-  //   desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-  //   aptent taciti sociosqu ad litora torquent per conubia nostra.`,
-  // },
-  // {
-  //   img: "finalbyz.jpg",
-  //   heading: "Boy With Ballons",
-  //   date: "August '24",
-  //   size: "30 x 35in",
-  //   line: "Photograph shot on Leika 990",
-  //   desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-  // turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-  // nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-  // tellus elit sed risus.`,
-  //   desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-  //   aptent taciti sociosqu ad litora torquent per conubia nostra.`,
-  // },
-  // {
-  //   img: "msqu.jpg",
-  //   heading: "Boy With Ballons",
-  //   date: "August '24",
-  //   size: "30 x 35in",
-  //   line: "Photograph shot on Leika 990",
-  //   desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-  // turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-  // nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-  // tellus elit sed risus.`,
-  //   desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-  //   aptent taciti sociosqu ad litora torquent per conubia nostra.`,
-  // },
+  {
+    author: "NDIBE BEACH ‘23",
+    img: "personal projects/Ndibe Beach/main.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+
+  {
+    author: "NDIBE BEACH ‘23",
+    img: "personal projects/Ndibe Beach/quote.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "AFIKPO ‘23",
+    img: "personal projects/Afikpo/dive.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "AFIKPO ‘23",
+    img: "personal projects/Afikpo/j.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "AFIKPO ‘23",
+    img: "personal projects/Afikpo/Lugulu.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "AFIKPO ‘23",
+    img: "personal projects/Afikpo/main.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+
+  {
+    author: "THE VAN PROJECT",
+    img: "personal projects/Project Van/DSC02225.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "THE VAN PROJECT",
+    img: "personal projects/Project Van/DSC02346.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "THE VAN PROJECT",
+    img: "personal projects/Project Van/DSC02357.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "THE VAN PROJECT",
+    img: "personal projects/Project Van/DSC02530.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+
+  {
+    author: "6IX ‘22",
+    img: "travel/6ix/DO01020079.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "6IX ‘22",
+    img: "travel/6ix/DO01020092.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "6IX ‘22",
+    img: "travel/6ix/DO01020097.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "6IX ‘22",
+    img: "travel/6ix/DO01020100.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "6IX ‘22",
+    img: "travel/6ix/DO01020106.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "CIRCA LONDON ‘21",
+    img: "travel/circa LDN _21/DSC00321.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "CIRCA LONDON ‘21",
+    img: "travel/circa LDN _21/DSC00323.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "CIRCA LONDON ‘21",
+    img: "travel/circa LDN _21/DSC00383.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  // ihunanya
+  {
+    author: "IHUANYA ‘24",
+    img: "ihunanya/ihunanya/bbz.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "IHUANYA ‘24",
+    img: "ihunanya/ihunanya/EUPHORIA in Nsukka.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "IHUANYA ‘24",
+    img: "ihunanya/ihunanya/finalbyz.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "IHUANYA ‘24",
+    img: "ihunanya/ihunanya/hq.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "IHUANYA ‘24",
+    img: "ihunanya/ihunanya/mask2.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "IHUANYA ‘24",
+    img: "ihunanya/ihunanya/moonlight.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "IHUANYA ‘24",
+    img: "ihunanya/ihunanya/NDI EGWU CHRISTMAS.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "IHUANYA ‘24",
+    img: "ihunanya/ihunanya/Serenity.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
+  {
+    author: "IHUANYA ‘24",
+    img: "ihunanya/ihunanya/The girl in her christmas dress.jpg",
+    heading: "Boy With Ballons",
+    date: "August '24",
+    size: "30 x 35in",
+    line: "Photograph shot on Leika 990",
+    desc1: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+  turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+  nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+  tellus elit sed risus.`,
+    desc2: ` Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra.`,
+  },
 ];
