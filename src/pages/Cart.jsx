@@ -13,14 +13,26 @@ const Cart = () => {
       setIsVisible(true);
     }, 200);
   }, [location]);
+
   return (
     <div
-      className={` ${
+      className={`${
         isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
       }`}
     >
       <NewHeader />
-      <div>Cart</div>
+      <h1
+        style={{
+          fontSize: "2rem",
+          fontWeight: "bold",
+          color: "#333", // Customize the color
+          textAlign: "center",
+          margin: "2rem 0",
+        }}
+      >
+        Page Under Construction
+      </h1>
+      {/* Other content */}
     </div>
   );
 };

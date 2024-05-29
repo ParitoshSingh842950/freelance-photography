@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NewHeader from "../components/NewHeader";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom"; // Import the Link component
 
 const Bio = () => {
   const location = useLocation();
@@ -13,9 +14,10 @@ const Bio = () => {
       setIsVisible(true);
     }, 200);
   }, [location]);
+
   return (
     <div
-      className={` ${
+      className={`${
         isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
       }`}
     >
@@ -35,7 +37,7 @@ const Bio = () => {
       </div>
       <div className="px-[20px] md:px-[200px] h-[40vh]">
         <h2 className="font-semibold text-xl text-center my-4">
-          My Name is <span className="font-black text-3xl">Adanna </span>
+          My Name is <span className="font-black text-3xl">Adanna</span>
         </h2>
         <p>
           Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque
@@ -49,10 +51,12 @@ const Bio = () => {
           nisi, ac posuere leo.
         </p>
         <div className="w-full flex justify-center">
-          <button className="my-4 mx-auto w-max py-4 px-8 bg-red-300 text-red-600 border-2 border-red-600 rounded-full">
-            {" "}
-            Check Out My Work
-          </button>
+          {/* Add a link to the collections page */}
+          <Link to="/options">
+            <button className="my-4 mx-auto w-max py-4 px-8 bg-red-300 text-red-600 border-2 border-red-600 rounded-full">
+              Check Out My Work
+            </button>
+          </Link>
         </div>
       </div>
     </div>

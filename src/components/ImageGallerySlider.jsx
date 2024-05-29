@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import Slider from "react-slick";
 import { setModal } from "../redux/reducer";
 
-const ImageGallerySlider = () => {
+const ImageGallerySlider = ({ data }) => {
   const dispatch = useDispatch();
   const handleClickImage = (index) => {
     dispatch(setModal({ open: true, index: index }));
@@ -53,7 +53,7 @@ const ImageGallerySlider = () => {
     <div>
       <div className="hidden md:block relative z-[3] px-4">
         <Slider {...settings}>
-          {GalleryImages.map((path, index) => (
+          {GalleryImages.filter(e => e.author == data.author).map((path, index) => (
             <div className="h-[125px]">
               <img
                 key={path.img}
