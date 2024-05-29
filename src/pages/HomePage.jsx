@@ -26,7 +26,7 @@ const HomePage = () => {
         <img
           src="images/yasmeen.png"
           alt="Adanna Eleje"
-          className="w-[500px] h-[600px] object-cover mt-[50px] cursor-pointer"
+          className="w-[600px] h-[750px] object-cover mt-[50px] cursor-pointer"
           onClick={() => navigate("/adanna-eleje")}
         />
         <div
