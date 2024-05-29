@@ -30,8 +30,8 @@ const Collection = () => {
 
   return (
     <div
-      className={` ${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
-        }`}
+      className={` ${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"}`}
+      style={{ boxSizing: "border-box" }}
     >
       <NewHeader />
       <button
@@ -55,13 +55,24 @@ const Collection = () => {
         Back to Options
       </button>
       <h2
-        className={`${!animate ? "translate-y-0" : "translate-y-[10px]"
-          } duration-700 text-[50px] md:text-[120px] font-black  font-[Anton]  md:-tracking-[1px] px-2`}
+        className={`${!animate ? "translate-y-0" : "translate-y-[10px]"} duration-700 text-[50px] md:text-[120px] font-black font-[Anton] md:-tracking-[1px] px-2`}
+        style={{
+          fontFamily: "HelveticaNeue-CondensedBold, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+          fontWeight: 900,
+        }}
       >
         Collections
       </h2>
       {collectionArray.map((e, i) => (
-        <CollectionCard data={e} key={e.id} index={i} />
+        <CollectionCard
+          data={e}
+          key={e.id}
+          index={i}
+          style={{
+            fontFamily: "HelveticaNeue-CondensedBold, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+            fontWeight: 900,
+          }}
+        />
       ))}
     </div>
   );

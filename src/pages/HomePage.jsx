@@ -17,9 +17,7 @@ const HomePage = () => {
 
   return (
     <div
-      className={`${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
-        }`}
-      style={{ boxSizing: "border-box" }}
+      className={`${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"}`}
     >
       <NewHeader />
       <div className="w-full flex flex-col items-center">
@@ -30,16 +28,12 @@ const HomePage = () => {
           onClick={() => navigate("/adanna-eleje")}
         />
         <div
-          className="flex gap-10 text-sm mt-8"
-          style={{
-            fontFamily:
-              "HelveticaNeue-CondensedBold, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-            fontWeight: 900,
-          }}
+          className="flex gap-20 text-base mt-24 font-[JetBrains Mono] font-bold px-4 md:px-10"
         >
-          <span>ADANNA ELEJE</span>
-          <div className="flex gap-2">
-            <span>28.987654</span> <span>72.09876543</span>
+          <span className="mx-4 md:mx-8">ADANNA ELEJE</span>
+          <div className="flex gap-4 md:gap-8 mx-4 md:mx-8">
+            <span>28.987654</span>
+            <span>72.09876543</span>
           </div>
         </div>
       </div>

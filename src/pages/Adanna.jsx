@@ -13,12 +13,19 @@ const Adanna = () => {
       setFontSize(true);
     }, 1500);
   }, []);
+
+  const commonStyles = {
+    boxSizing: "border-box",
+    fontFamily:
+      '"HelveticaNeue-CondensedBold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
+  };
+
   return (
-    <div>
+    <div style={commonStyles}>
       <NewHeader />
       <h2
-        className=" text-center font-bold text-[3rem] md:text-[8rem] text-[arial] duration-[1s]"
-        style={{ fontSize: !fontSize && 0 }}
+        className="text-center font-bold text-[3rem] md:text-[8rem] text-[arial] duration-[1s]"
+        style={{ ...commonStyles, fontWeight: 900, fontSize: !fontSize && 0 }}
       >
         Adanna Eleje
       </h2>
@@ -26,6 +33,7 @@ const Adanna = () => {
         <div
           className="h-[50vh] md:h-[80vh] w-[300px] duration-[1.5s] hover:w-full flex justify-center"
           style={{
+            ...commonStyles,
             width: expand ? "100%" : "308px",
             height: !expand && "354px",
             marginTop: !expand ? "50px" : 0,
@@ -40,13 +48,12 @@ const Adanna = () => {
       </div>
       {fontSize && (
         <div className="flex px-[10px] md:px-[200px] py-[50px] items-center flex-col md:flex-row">
-          <div className="md:w-1/2 font-bold">
+          <div className="md:w-1/2" style={{ ...commonStyles, fontWeight: 900 }}>
             <p className="text-2xl">"Give me nothing, &</p>
             <p className="text-2xl"> I'll still produce a work of art "</p>
             <p className="text-xl">-Ada</p>
           </div>
-          <div className="md:w-1/2">
-            {" "}
+          <div className="md:w-1/2" style={commonStyles}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
             sunt quod, quam mollitia ducimus voluptatem beatae ad dicta deleniti
             distinctio velit quae aperiam temporibus, perspiciatis odio corporis

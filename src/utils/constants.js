@@ -25,7 +25,7 @@ export const exhibitionArray = [
     name: "WHAT WOULD I MISS?",
     paragraph:
       "Echoes of Existence: Capturing Life's Contrasts Through Depression's Lens",
-    locked: false,
+    locked: true,
   },
 ];
 
@@ -35,7 +35,7 @@ export const collectionArray = [
     content: `Golden Sand Beach, also known as Ndibe Sand Beach, is located in the Afikpo LGA of Ebonyi State. This idyllic destination is perfect for picnics, relaxation, sunbathing, sport fishing, canoe racing, swimming, fishing, yachting, shell exploration, and more. The
       beach buzzes with activities on weekends and during festive periods, drawing large
       crowds.`,
-    img: "images/boat.jpg",
+    img: "images/personal projects/Ndibe Beach/main.jpg",
     name: "NDIBE BEACH ‘23",
     paragraph: "Explore the beautiful Ndibe Beach through my lens",
     locked: false,
@@ -43,7 +43,7 @@ export const collectionArray = [
   {
     id: "02",
     content: ` Afikpo, the village from which my parents and grandparents hail, is a place I am fortunate enough to visit every year during the Christmas break. This place never ceasesto feel like home. The people, the culture, the joy—it's home.`,
-    img: "images/lo.jpg",
+    img: "images/personal projects/Afikpo/main.jpg",
     name: "AFIKPO ‘23",
     paragraph: "Explore the beauty of my roots through my lens",
     locked: false,
@@ -51,7 +51,7 @@ export const collectionArray = [
   {
     id: "03",
     content: ` This project, featuring Vanina the model, is one of my first editorial-style endeavors and holds a special place in my heart.`,
-    img: "https://s3-alpha-sig.figma.com/img/f064/5637/dbd28f4e2487f85947d0e4d723959ac3?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko8S-4TfVQe86Wtshlsc6j6lGttlODcGhBi0FpAB3KISFXjmdohu7EmJUGfZkd1uU1k8Cb3-waD4RNZwFlIyGao6QL1ku8E6hTTiTEPGprhZjkjSoozoEzyFKdWpEYdL84LYeph7ksWl6NQ-jLGfCfB6zVqrqcKNIh74yTyM3Kztk7D2vKPkreUnbvwPBhKApP8awQVlJu0zp1EovrQzGlVBMs0R9E8DbXCh6mARA5Ld4OZKavFzqX0XitMcumLtHAKwxEJ~FLuyjOkt2dZ-MmWHM4pivSyxWuoUQz4ib5srKW2eG4ozN19NDsvr3qC59IfmuxKCVh4lEp945Dhlrw__",
+    img: "images/personal projects/Project Van/main.jpg",
     name: "THE VAN PROJECT",
     paragraph: "Model: Vanina height: 180cm",
     locked: false,
@@ -63,7 +63,7 @@ export const travelArray = [
     id: "01",
     content:
       "London, a city where history and modernity blend seamlessly, offers an endless canvas forphotographer's lens. From the timeless charm of its cobblestone streets and iconic landmarks like the Tower Bridge and Big Ben to the vibrant energy of its diverse neighborhoods and bustling markets, every corner of London tells a unique story. Capturing the interplay of light and shadow against its historic architecture, the vibrant hues of street art, and the candid moments of everyday life, my journey through London is a visual narrative of a city that is ever-evolving yet deeply rooted in its rich heritage.",
-    img: "images/ct.jpg",
+    img: "images/travel/6ix/main.jpg",
     name: "CIRCA LONDON ‘21",
     paragraph: "Explore the beautiful city of London through  ",
     locked: false,
@@ -72,7 +72,7 @@ export const travelArray = [
     id: "02",
     content:
       " Documenting my time in Toronto and Niagara Falls has been an exhilarating journey through urban vibrancy and natural wonder. In Toronto, the striking skyline, eclectic neighborhoods, and bustling street scenes offer a dynamic backdrop that captures the city's diverse and lively spirit. Contrasting this urban energy, the majestic beauty of Niagara Falls, with its thundering cascades and misty rainbows, presents a breathtaking spectacle of nature's power and serenity. Through my lens, I aim to share the unique stories and awe-inspiring moments from these two captivating destinations, showcasing the incredible contrasts and connections that make this part of Canada so remarkable.",
-    img: "images/lo.jpg",
+    img: "images/travel/circa LDN _21/main.jpg",
     name: "6IX ‘22",
     paragraph: "To be filled later and to be leter",
     locked: false,
