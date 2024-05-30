@@ -9,12 +9,13 @@ const Contact = () => {
       setAnimate(true);
     }, 200);
   }, []);
+
   return (
     <>
       <NewHeader />
       <div className="p-4" id="contact">
         <div className="w-full md:flex">
-          <div className=" md:w-2/3 p-4 font-[Anton]   text-[30px] md:text-[70px] uppercase">
+          <div className="md:w-2/3 p-4 font-[Anton] text-[30px] md:text-[70px] uppercase">
             <p>A Creative Director /</p>
             <p className="indent-[50px]">Photographer</p>
             <p className="indent-[100px]">From</p>
@@ -33,7 +34,7 @@ const Contact = () => {
             <img
               src="images/ada_walking png.png"
               alt=""
-              className="md:hidden w-[90%] aspect-square object-cover "
+              className="md:hidden w-[90%] aspect-square object-cover"
             />
           </div>
           <div className="w-1/2 space-y-3 md:-mt-[100px]">
@@ -41,17 +42,23 @@ const Contact = () => {
               <i className="mr-2 fa-solid fa-phone"></i>(617)-909-3213
             </p>
             <p>
-              <i className=" mr-2 fa-solid fa-envelope"></i>AYDEELEJE@GMAIL.COM
+              <i className="mr-2 fa-solid fa-envelope"></i>AYDEELEJE@GMAIL.COM
             </p>
             <p>
-              <i className=" mr-2 fa-solid fa-location-dot"></i> HARTFORD, CT 06106
+              <i className="mr-2 fa-solid fa-location-dot"></i> HARTFORD, CT 06106
             </p>
             <p>
-              <i className=" mr-2 fa-brands fa-instagram"></i>@SHOTBYADA
+              <i className="mr-2 fa-brands fa-instagram"></i>@SHOTBYADA
             </p>
-            <button className="py-3 px-6 rounded md:text-[18px] bg-green-300 font-bold w-max  text-green-700 border-2 border-green-700">
-              FOLLOW ME
-            </button>
+            <a
+              href="https://www.instagram.com/365da.ze?igsh=MXJxNWFiZDBiaHo0aQ%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="mt-4 py-3 px-6 rounded md:text-[18px] bg-green-300 font-bold w-max text-green-700 border-2 border-green-700">
+                FOLLOW ME
+              </button>
+            </a>
           </div>
         </div>
       </div>
