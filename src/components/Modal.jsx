@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setModal } from "../redux/reducer";
 import { GalleryImages } from "../utils/constants";
@@ -27,7 +27,7 @@ const Modal = ({ author }) => {
       handleNext();
   }, [index]);
 
-  if (!open && modalClass === "modal-exit") return null;
+  if (!open) return null;
   return (
     <div
       className="fixed inset-0 bg-[rgba(17,17,17,0.8)] flex items-center justify-center z-[9]"
