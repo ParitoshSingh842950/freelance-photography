@@ -6,9 +6,16 @@ import { setModal } from "../redux/reducer";
 
 const ImageGallerySlider = ({ data }) => {
   const dispatch = useDispatch();
-  const handleClickImage = (index) => {
-    dispatch(setModal({ open: true, index: index }));
+
+  // Create an array of images by the current author
+  const authorImages = GalleryImages.filter((e) => e.author === data.name);
+
+  // Handle image click to open modal
+  const handleClickImage = (originalIndex) => {
+    dispatch(setModal({ open: true, index: originalIndex }));
   };
+
+  // Custom arrow component for slider
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -27,19 +34,21 @@ const ImageGallerySlider = ({ data }) => {
       </div>
     );
   }
-  var settings = {
-    // dots: true,
+
+  // Slider settings for desktop
+  const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: GalleryImages.filter((e) => e.author == data.name).length,
+    slidesToShow: authorImages.length,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     nextArrow: <SamplePrevArrow />,
     prevArrow: <SamplePrevArrow />,
   };
-  var smsettings = {
-    // dots: true,
+
+  // Slider settings for mobile
+  const smsettings = {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -54,95 +63,43 @@ const ImageGallerySlider = ({ data }) => {
     <div>
       <div className="hidden md:block relative z-[3] px-4">
         <Slider {...settings}>
-          {GalleryImages.filter((e) => e.author == data.name).map(
-            (path, index) => (
-              <div className="h-[125px]">
-                <img
-                  key={path.img}
-                  src={`images/${path.img}`}
-                  onClick={() => handleClickImage(index)}
-                  className="h-[125px]  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
-                />
-              </div>
-            )
-          )}
-        </Slider>
-      </div>
-      <div className="block md:hidden relative z-[3] px-4 ">
-        {/* <Slider
-          {...{
-            infinite: true,
-            speed: 500,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            // nextArrow: <SamplePrevArrow />,
-            // prevArrow: <SamplePrevArrow />,
-          }}
-        >
-          {GalleryImages.map((path, index) => (
-            <div className="h-[125px]">
+          {authorImages.map((path, index) => (
+            <div className="h-[125px]" key={index}>
               <img
-                key={path.img}
                 src={`images/${path.img}`}
-                onClick={() => handleClickImage(index)}
-                className="h-[125px] w-full  relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
+                onClick={() => handleClickImage(GalleryImages.indexOf(path))}
+                className="h-[125px] relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
+                alt=""
               />
             </div>
           ))}
-        </Slider> */}
-        <Slider
-          {...{
-            // dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            nextArrow: <SamplePrevArrow />,
-            prevArrow: <SamplePrevArrow />,
-          }}
-        >
-          {GalleryImages.filter((e) => e.author == data.name).map(
-            (path, index) => (
-              <div className="h-[125px]">
-                <img
-                  key={path.img}
-                  src={`images/${path.img}`}
-                  onClick={() => handleClickImage(index)}
-                  className="h-[125px]  relative z-[3] w-full object-cover cursor-pointer hover:scale-95 duration-200"
-                />
-              </div>
-            )
-          )}
+        </Slider>
+      </div>
+      <div className="block md:hidden relative z-[3] px-4">
+        <Slider {...smsettings}>
+          {authorImages.map((path, index) => (
+            <div className="h-[125px]" key={index}>
+              <img
+                src={`images/${path.img}`}
+                onClick={() => handleClickImage(GalleryImages.indexOf(path))}
+                className="h-[125px] relative z-[3] w-full object-cover cursor-pointer hover:scale-95 duration-200"
+                alt=""
+              />
+            </div>
+          ))}
         </Slider>
 
-        <Slider
-          {...{
-            infinite: true,
-            speed: 500,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            nextArrow: <SamplePrevArrow />,
-            prevArrow: <SamplePrevArrow />,
-          }}
-        >
-          {GalleryImages.filter((e) => e.author == data.name).map(
-            (path, index) => (
-              <div className="h-[125px]">
-                <img
-                  key={path.img}
-                  src={`images/${path.img}`}
-                  onClick={() => handleClickImage(index)}
-                  className="h-[125px] w-full relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
-                />
-              </div>
-            )
-          )}
+        <Slider {...smsettings}>
+          {authorImages.map((path, index) => (
+            <div className="h-[125px]" key={index}>
+              <img
+                src={`images/${path.img}`}
+                onClick={() => handleClickImage(GalleryImages.indexOf(path))}
+                className="h-[125px] w-full relative z-[3] aspect-square object-cover cursor-pointer hover:scale-95 duration-200"
+                alt=""
+              />
+            </div>
+          ))}
         </Slider>
       </div>
     </div>
