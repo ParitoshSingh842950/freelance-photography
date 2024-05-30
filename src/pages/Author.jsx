@@ -67,7 +67,7 @@ const Author = () => {
         />
       </section>
 
-      <Modal />
+      <Modal author={author.name} />
     </div>
   );
 };

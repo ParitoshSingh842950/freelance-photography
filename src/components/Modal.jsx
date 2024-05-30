@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setModal } from "../redux/reducer";
 import { GalleryImages } from "../utils/constants";
 
-const Modal = () => {
+const Modal = ({ author }) => {
   const { open, index } = useSelector((state) => state.home.modal);
   const [viewImage, setViewImage] = useState(false);
   const [animate, setAnimate] = useState(false);
@@ -29,6 +29,15 @@ const Modal = () => {
       dispatch(setModal({ open: true, index: nextCount }));
     }
   };
+
+  useEffect(() => {
+    if (
+      open &&
+      GalleryImages[index || 0].author &&
+      GalleryImages[index || 0].author !== author
+    )
+      handleNext();
+  }, [index]);
 
   if (!open && modalClass === "modal-exit") return null;
   return (
