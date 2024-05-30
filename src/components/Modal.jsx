@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setModal } from "../redux/reducer";
 import { GalleryImages } from "../utils/constants";
 
 const Modal = () => {
   const { open, index } = useSelector((state) => state.home.modal);
+  const [viewImage, setViewImage] = useState(false);
+  const [animate, setAnimate] = useState(false);
   const dispatch = useDispatch();
 
   const handleNext = () => {
@@ -59,9 +61,40 @@ const Modal = () => {
             className="h-full w-full object-cover"
             src={`images/${GalleryImages[index || 0].img}`}
             alt=""
+            onClick={() => {
+              setViewImage(!viewImage);
+              setTimeout(() => {
+                setAnimate(true);
+              }, 100);
+            }}
           />
         </div>
       </div>
+      {/* Image View */}
+      {viewImage && (
+        <div
+          className="fixed h-full w-full flex items-center justify-center bg-[rgb(0,0,0,0.9)] z-[999]"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div
+            className="size-[30px] bg-white fixed top-5 right-5 rounded-full font-bold flex items-center justify-center cursor-pointer hover:scale-110 duration-200 hover:bg-red-500 hover:text-white"
+            onClick={() => {
+              setViewImage(false);
+              setAnimate(false);
+            }}
+          >
+            X
+          </div>
+          <img
+            className="object-contain duration-500 w-full"
+            style={{
+              height: animate ? "96vh" : "0px",
+            }}
+            src={`images/${GalleryImages[index || 0].img}`}
+            alt=""
+          />
+        </div>
+      )}
     </div>
   );
 };

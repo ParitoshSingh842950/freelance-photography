@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GalleryImages } from "../utils/constants";
 import { useDispatch } from "react-redux";
 import Slider from "react-slick";
 import { setModal } from "../redux/reducer";
 
-const ImageGallerySlider = ({ data }) => {
+const ImageGallerySlider = ({ images }) => {
   const dispatch = useDispatch();
 
   // Create an array of images by the current author
-  const authorImages = GalleryImages.filter((e) => e.author === data.name);
 
   // Handle image click to open modal
   const handleClickImage = (originalIndex) => {
@@ -39,7 +38,7 @@ const ImageGallerySlider = ({ data }) => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: authorImages.length,
+    slidesToShow: images.length,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -63,7 +62,7 @@ const ImageGallerySlider = ({ data }) => {
     <div>
       <div className="hidden md:block relative z-[3] px-4">
         <Slider {...settings}>
-          {authorImages.map((path, index) => (
+          {images.map((path, index) => (
             <div className="h-[125px]" key={index}>
               <img
                 src={`images/${path.img}`}
@@ -77,7 +76,7 @@ const ImageGallerySlider = ({ data }) => {
       </div>
       <div className="block md:hidden relative z-[3] px-4">
         <Slider {...smsettings}>
-          {authorImages.map((path, index) => (
+          {images.map((path, index) => (
             <div className="h-[125px]" key={index}>
               <img
                 src={`images/${path.img}`}
@@ -90,7 +89,7 @@ const ImageGallerySlider = ({ data }) => {
         </Slider>
 
         <Slider {...smsettings}>
-          {authorImages.map((path, index) => (
+          {images.map((path, index) => (
             <div className="h-[125px]" key={index}>
               <img
                 src={`images/${path.img}`}
