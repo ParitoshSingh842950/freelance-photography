@@ -55,20 +55,20 @@ const Modal = ({ author }) => {
         {`
           .modal-enter {
             opacity: 0;
-            transform: scale(0.95);
+            transform: translateY(50px);
           }
           .modal-enter-active {
             opacity: 1;
-            transform: scale(1);
+            transform: translateY(0);
             transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1), transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
           }
           .modal-exit {
             opacity: 1;
-            transform: scale(1);
+            transform: translateY(0);
           }
           .modal-exit-active {
             opacity: 0;
-            transform: scale(0.95);
+            transform: translateY(50px);
             transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1), transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
           }
           .image-view-enter {
