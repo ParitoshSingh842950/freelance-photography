@@ -28,7 +28,7 @@ const Modal = ({ author }) => {
     if (open) {
       setModalClass("modal-enter");
       setTimeout(() => setModalClass("modal-enter-active"), 10);
-    } else if (modalClass !== "") {
+    } else {
       setModalClass("modal-exit-active");
       setTimeout(() => setModalClass("modal-exit"), 400);
     }
@@ -55,20 +55,20 @@ const Modal = ({ author }) => {
         {`
           .modal-enter {
             opacity: 0;
-            transform: translateY(50px);
+            transform: scale(0.95);
           }
           .modal-enter-active {
             opacity: 1;
-            transform: translateY(0);
+            transform: scale(1);
             transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1), transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
           }
           .modal-exit {
             opacity: 1;
-            transform: translateY(0);
+            transform: scale(1);
           }
           .modal-exit-active {
             opacity: 0;
-            transform: translateY(50px);
+            transform: scale(0.95);
             transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1), transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
           }
           .image-view-enter {
