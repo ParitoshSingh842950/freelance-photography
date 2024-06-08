@@ -54,12 +54,15 @@ const Adanna = () => {
             <p className="text-xl">-Ada</p>
           </div>
           <div className="md:w-1/2" style={commonStyles}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-            sunt quod, quam mollitia ducimus voluptatem beatae ad dicta deleniti
-            distinctio velit quae aperiam temporibus, perspiciatis odio corporis
-            culpa, blanditiis itaque veritatis atque illum ratione iste totam.
-            Maiores quos obcaecati incidunt tempore, rerum laboriosam porro
-            magni inventore necessitatibus, similique nobis reiciendis.
+            Adanna Eleje, a Nigerian artist, skillfully captures the beauty inherent in the world—whether it
+            be in the form of individuals or landscapes. Her aspirations are threefold: to be, to see, and to
+            pursue everything that resonates with her innermost self. Adanna discovers reflections of
+            herself in every person and element she encounters. Committed to refining her skills, she
+            channels creativity into her work, intertwining her expressions with the rich tapestry of her
+            Nigerian culture. Through her lens, she navigates the complexities of existence, acknowledging
+            the paradox of conveying thoughts within the cultural context. Despite grappling with uncertainty
+            and a sense of detachment, Adanna finds connection in the midst of chaos, questioning the
+            authenticity of life itself.
           </div>
         </div>
       )}
