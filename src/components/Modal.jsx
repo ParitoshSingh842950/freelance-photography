@@ -28,7 +28,7 @@ const Modal = ({ author }) => {
     if (open) {
       setModalClass("modal-enter");
       setTimeout(() => setModalClass("modal-enter-active"), 10);
-    } else {
+    } else if (modalClass !== "") {
       setModalClass("modal-exit-active");
       setTimeout(() => setModalClass("modal-exit"), 400);
     }
