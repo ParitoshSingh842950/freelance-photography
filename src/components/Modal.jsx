@@ -12,10 +12,15 @@ const Modal = ({ author }) => {
 
   const handleNext = () => {
     let nextCount = index + 1;
-    if (nextCount > GalleryImages.length - 1) {
-      dispatch(setModal({ open: true, index: 0 }));
-    } else {
-      dispatch(setModal({ open: true, index: nextCount }));
+    while (nextCount !== index) {
+      if (nextCount >= GalleryImages.length) {
+        nextCount = 0;
+      }
+      if (!author || GalleryImages[nextCount].author === author) {
+        dispatch(setModal({ open: true, index: nextCount }));
+        break;
+      }
+      nextCount++;
     }
   };
 
@@ -36,12 +41,16 @@ const Modal = ({ author }) => {
       GalleryImages[index || 0].author !== author
     )
       handleNext();
-  }, [index]);
+  }, [index, open, author]);
 
   if (!open && modalClass === "modal-exit") return null;
 
   return (
     <>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Maragsa&display=swap"
+        rel="stylesheet"
+      />
       <style>
         {`
           .modal-enter {
@@ -81,6 +90,7 @@ const Modal = ({ author }) => {
       <div
         className={`fixed inset-0 bg-[rgba(17,17,17,0.8)] flex items-center justify-center z-[9] ${modalClass}`}
         onClick={() => dispatch(setModal({ open: false, index: 0 }))}
+        style={{ fontFamily: "'Maragsa', sans-serif" }}
       >
         <div
           className="w-[90vw] md:w-[60vw] p-4 flex bg-black h-[90vh] relative"
