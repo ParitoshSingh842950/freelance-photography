@@ -17,9 +17,8 @@ const Bio = () => {
 
   return (
     <div
-      className={`${
-        isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
-      }`}
+      className={`${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
+        }`}
     >
       <NewHeader />
       <div className="relative">
@@ -39,16 +38,16 @@ const Bio = () => {
         <h2 className="font-semibold text-xl text-center my-4">
           My Name is <span className="font-black text-3xl">Adanna</span>
         </h2>
-        <p>
-          Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque
-          quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo
-          vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu
-          vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus,
-          porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna
-          non ligula vestibulum eleifend. Nulla varius volutpat turpis sed
-          lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum
-          sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis
-          nisi, ac posuere leo.
+        <p >
+          Adanna Eleje, a Nigerian artist, skillfully captures the beauty inherent in the world—whether it
+          be in the form of individuals or landscapes. Her aspirations are threefold: to be, to see, and to
+          pursue everything that resonates with her innermost self. Adanna discovers reflections of
+          herself in every person and element she encounters. Committed to refining her skills, she
+          channels creativity into her work, intertwining her expressions with the rich tapestry of her
+          Nigerian culture. Through her lens, she navigates the complexities of existence, acknowledging
+          the paradox of conveying thoughts within the cultural context. Despite grappling with uncertainty
+          and a sense of detachment, Adanna finds connection in the midst of chaos, questioning the
+          authenticity of life itself.
         </p>
         <div className="w-full flex justify-center">
           {/* Add a link to the collections page */}
