@@ -94,6 +94,12 @@ const Modal = ({ author }) => {
             <img
               className="w-full md:aspect-square object-cover md:grayscale"
               src={`images/${GalleryImages[index || 0].img}`}
+              onClick={() => {
+                setViewImage(!viewImage);
+                setTimeout(() => {
+                  setAnimate(true);
+                }, 100);
+              }}
               alt=""
             />
             <div className="text-[12px] text-white leading-3 tracking-wide py-1 w-full">
@@ -129,7 +135,7 @@ const Modal = ({ author }) => {
             />
           </div>
           <button
-            className="absolute top-4 left-4 text-white text-2xl bg-red-600 hover:bg-red-700 rounded-full w-10 h-10 flex items-center justify-center"
+            className="absolute top-4 left-4 md:left-8 text-white text-2xl bg-red-600 hover:bg-red-700 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-lg transform hover:scale-110 transition duration-200 ease-in-out"
             onClick={() => dispatch(setModal({ open: false, index: 0 }))}
           >
             &times;
