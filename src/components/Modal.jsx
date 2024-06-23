@@ -128,6 +128,12 @@ const Modal = ({ author }) => {
               }}
             />
           </div>
+          <button
+            className="absolute top-4 left-4 text-white text-2xl bg-red-600 hover:bg-red-700 rounded-full w-10 h-10 flex items-center justify-center"
+            onClick={() => dispatch(setModal({ open: false, index: 0 }))}
+          >
+            &times;
+          </button>
         </div>
         {viewImage && (
           <div
