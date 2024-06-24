@@ -25,7 +25,7 @@ const Options = () => {
 
   return (
     <div
-      className={` ${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"}`}
+      className={` ${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"}custom-font`}
     >
       <NewHeader />
       <div className="h-[calc(100vh-80px)] w-full flex items-center justify-evenly flex-wrap">

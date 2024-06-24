@@ -17,7 +17,7 @@ const HomePage = () => {
 
   return (
     <div
-      className={`${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"}`}
+      className={`${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"}custom-font `}
     >
       <NewHeader />
       <div className="w-full flex flex-col items-center">
@@ -28,7 +28,7 @@ const HomePage = () => {
           onClick={() => navigate("/adanna-eleje")}
         />
         <div
-          className="flex gap-20 text-base mt-24 font-[JetBrains Mono] font-bold px-4 md:px-10"
+          className="flex gap-20 text-base mt-24 font-[JetBrains Mono] font-bold px-4 md:px-10 "
         >
           <span className="mx-4 md:mx-8">ADANNA ELEJE</span>
           <div className="flex gap-4 md:gap-8 mx-4 md:mx-8">

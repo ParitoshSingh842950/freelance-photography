@@ -25,11 +25,11 @@ const NewHeader = ({ transparent, textWhite }) => {
     <div
       className={` overflow-hidden sticky py-2 px-[20px] md:px-[200px] text-2xl bg-[whitesmoke]   top-0 w-full z-[8] font-[JetBrains Mono]  flex items-center `}
     >
-      <b className="text-[14px] cursor-pointer " onClick={() => navigate("/")}>
+      <b className="text-[14px] cursor-pointer  " onClick={() => navigate("/")}>
         SHOTBYADA
       </b>
 
-      <div className=" flex justify-end  flex-1">
+      <div className=" flex justify-end  flex-1 custom-font">
         <div
           className={`overflow-hidden md:ml-[50px] md:static absolute duration-500 z-[1] bg-black right-0 top-0 py-4 text-sm  text-white flex  md:rounded  md:gap-2 items-center  ${menu ? "w-full md:w-[600px] md:px-2" : "w-[0px] p-0"
             }`}

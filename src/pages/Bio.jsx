@@ -38,7 +38,7 @@ const Bio = () => {
         <h2 className="font-semibold text-xl text-center my-4">
           My Name is <span className="font-black text-3xl">Adanna</span>
         </h2>
-        <p className="font-[cursive] ">
+        <p className="custom-font">
           Adanna Eleje, a Nigerian artist, skillfully captures the beauty inherent in the world—whether it
           be in the form of individuals or landscapes. Her aspirations are threefold: to be, to see, and to
           pursue everything that resonates with her innermost self. Adanna discovers reflections of

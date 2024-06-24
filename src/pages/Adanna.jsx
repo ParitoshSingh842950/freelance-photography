@@ -53,7 +53,7 @@ const Adanna = () => {
             <p className="text-2xl"> I'll still produce a work of art "</p>
             <p className="text-xl">-Ada</p>
           </div>
-          <div className="md:w-1/2" style={commonStyles}>
+          <div className="md:w-1/2 custom-font" style={commonStyles}>
             Adanna Eleje, a Nigerian artist, skillfully captures the beauty inherent in the world—whether it
             be in the form of individuals or landscapes. Her aspirations are threefold: to be, to see, and to
             pursue everything that resonates with her innermost self. Adanna discovers reflections of

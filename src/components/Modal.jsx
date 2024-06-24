@@ -79,7 +79,7 @@ const Modal = ({ author }) => {
         `}
       </style>
       <div
-        className={`fixed inset-0 bg-[rgba(17,17,17,0.8)] flex items-center justify-center z-[9] ${modalClass}`}
+        className={`fixed inset-0 bg-[rgba(17,17,17,0.8)] flex items-center justify-center z-[9] ${modalClass} custom-font`}
         onClick={() => dispatch(setModal({ open: false, index: 0 }))}
       >
         <div

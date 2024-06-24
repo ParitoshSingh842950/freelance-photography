@@ -16,10 +16,7 @@ const Cart = () => {
 
   return (
     <div
-      className={`${
-        isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"
-      }`}
-    >
+      className={`${isVisible ? "opacity-100 duration-[1000ms]" : "opacity-0"} custom-font`} >
       <NewHeader />
       <h1
         style={{
