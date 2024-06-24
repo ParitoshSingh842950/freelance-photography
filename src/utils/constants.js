@@ -4,7 +4,7 @@ export const exhibitionArray = [
     content:
       "Derived from the Igbo word meaning 'to love,' ỊHỤNANYA embodies the profound connection between seeing and being loved. In a world where visibility is often equated with validation and understanding, this exhibition seeks to illuminate the beauty and significance of being seen.Through captivating imagery and evocative storytelling, ỊHỤNANYA invites viewers on a journey of discovery and connection, where each photograph becomes a testament to thepower of love and appreciation.",
     img: "images/boat.jpg",
-    name: "IHUANYA ‘24",
+    name: "ỊHỤNANYA ‘24",
     paragraph: "To be Loved is to be seen, and to be seen is to be understood.",
     locked: false,
   },
@@ -422,7 +422,7 @@ export const GalleryImages = [
 
   // ihunanya
   {
-    author: "IHUANYA ‘24",
+    author: "ỊHỤNANYA ‘24",
     img: "ihunanya/ihunanya/bbz.jpg",
     heading: "Joyful Waters",
     date: "December '24",
@@ -437,7 +437,7 @@ export const GalleryImages = [
     carefree and joyous spirit of youth.`,
   },
   {
-    author: "IHUANYA ‘24",
+    author: "ỊHỤNANYA ‘24",
     img: "ihunanya/ihunanya/EUPHORIA in Nsukka.jpg",
     heading: "Euphoria in Nsukka",
     date: "December '24",
@@ -454,7 +454,7 @@ export const GalleryImages = [
     desc2: '',
   },
   {
-    author: "IHUANYA ‘24",
+    author: "ỊHỤNANYA ‘24",
     img: "ihunanya/ihunanya/finalbyz.jpg",
     heading: "Pyramid of Joy",
     date: "December '24",
@@ -471,7 +471,7 @@ export const GalleryImages = [
     desc2: ` `,
   },
   {
-    author: "IHUANYA ‘24",
+    author: "ỊHỤNANYA ‘24",
     img: "ihunanya/ihunanya/hq.jpg",
     heading: "Community Connections",
     date: "December '24",
@@ -489,7 +489,7 @@ export const GalleryImages = [
     desc2: ` `,
   },
   {
-    author: "IHUANYA ‘24",
+    author: "ỊHỤNANYA ‘24",
     img: "ihunanya/ihunanya/mask2.jpg",
     heading: "Lugulu",
     date: "December '24",
@@ -508,7 +508,7 @@ export const GalleryImages = [
     desc2: ``,
   },
   {
-    author: "IHUANYA ‘24",
+    author: "ỊHỤNANYA ‘24",
     img: "ihunanya/ihunanya/moonlight.jpg",
     heading: "Moonlight",
     date: "December '24",
@@ -524,7 +524,7 @@ export const GalleryImages = [
     desc2: ` `,
   },
   {
-    author: "IHUANYA ‘24",
+    author: "ỊHỤNANYA ‘24",
     img: "ihunanya/ihunanya/NDI EGWU CHRISTMAS.jpg",
     heading: "Ndi Egwu Christmas",
     date: "December '24",
@@ -542,7 +542,7 @@ export const GalleryImages = [
     desc2: ` `,
   },
   {
-    author: "IHUANYA ‘24",
+    author: "ỊHỤNANYA ‘24",
     img: "ihunanya/ihunanya/Serenity.jpg",
     heading: "Serene Journey",
     date: "December '24",
@@ -560,7 +560,7 @@ export const GalleryImages = [
     desc2: ` `,
   },
   {
-    author: "IHUANYA ‘24",
+    author: "ỊHỤNANYA ‘24",
     img: "ihunanya/ihunanya/The girl in her christmas dress.jpg",
     heading: "The Girl in Her Christmas Dress",
     date: "December '24",
