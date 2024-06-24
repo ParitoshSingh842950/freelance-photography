@@ -2,7 +2,7 @@ export const exhibitionArray = [
   {
     id: "01",
     content:
-      "Derived from the Igbo word meaning 'to love,' ỊHỤNANYA embodies the profound connection between seeing and being loved. In a world where visibility is often equated with validation and understanding, this exhibition seeks to illuminate the beauty and significance of being seen.Through captivating imagery and evocative storytelling, Ihunanya invites viewers on a journey of discovery and connection, where each photograph becomes a testament to thepower of love and appreciation.",
+      "Derived from the Igbo word meaning 'to love,' ỊHỤNANYA embodies the profound connection between seeing and being loved. In a world where visibility is often equated with validation and understanding, this exhibition seeks to illuminate the beauty and significance of being seen.Through captivating imagery and evocative storytelling, ỊHỤNANYA invites viewers on a journey of discovery and connection, where each photograph becomes a testament to thepower of love and appreciation.",
     img: "images/boat.jpg",
     name: "IHUANYA ‘24",
     paragraph: "To be Loved is to be seen, and to be seen is to be understood.",
