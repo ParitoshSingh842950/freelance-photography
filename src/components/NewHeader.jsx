@@ -34,8 +34,9 @@ const NewHeader = ({ transparent, textWhite }) => {
           className={`overflow-hidden md:ml-[50px] md:static absolute duration-500 z-[1] bg-black right-0 top-0 py-4 text-sm  text-white flex  md:rounded  md:gap-2 items-center  ${menu ? "w-full md:w-[600px] md:px-2" : "w-[0px] p-0"
             }`}
         >
-          {navs.map((nav) => (
+          {navs.map((nav, index) => (
             <button
+              key={index}
               className="rounded  hover:bg-[white] px-2 md:px-4 py-1 md:text-sm text-[12px] duration-200 hover:text-black"
               onClick={() => navigate(nav.route)}
             >

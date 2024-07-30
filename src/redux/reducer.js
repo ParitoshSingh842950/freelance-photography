@@ -9,7 +9,6 @@ const homeReducer = createSlice({
     },
     author: null,
   },
-
   reducers: {
     setAuthor: (state, action) => {
       state.author = action.payload;
